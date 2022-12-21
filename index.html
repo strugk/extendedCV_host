@@ -1,856 +1,869 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="treestyles.css" type="text/css"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!--This file has been created with toxhtml.xsl--><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><title>Krzysztof Strug
-An extended CV</title><link rel="stylesheet" href="STRG_extendedCV.html_files//treestyles.css" type="text/css" /><script type="text/javascript" src="STRG_extendedCV.html_files//marktree.js"> 
-	</script></head><body><div class="basetop"><a onclick="expandAll(document.getElementById('base'))" href="#">Expand</a> -
-<a onclick="collapseAll(document.getElementById('base'))" href="#">Collapse</a></div><div class="basetext" id="base"><ul>
-	<li class="col" id="FMID_754292294FM"><div class="boxed"><div class="nodecontent" style="font-size:133%;">Krzysztof Strug<br />An extended CV</div><div class="note-and-attributes"><span class="note"><p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="UTF-8"><title>Krzysztof Strug An extended CV</title>
+<style type="text/css">
+    body {color: #000000; font-size: 10pt; font-family: &quot;SansSerif&quot;, sans-serif; }
+li { list-style: none;  margin: 0; }
+p { margin: 0; }
+
+span.l { color: red; font-weight: bold; }
+
+a.mapnode:link,
+a.mapnode:visited,
+a.mapnode:active,
+a.mapnode:hover {
+    text-decoration: none; color: black;
+}
+a.mapnode:hover { background: #eeeee0; }
+span.foldopened, span.foldclosed  {
+    font-size: xx-small;
+    border-width: 1;
+    font-family: monospace;
+    padding: 0em 0.25em 0em 0.25em;
+    background: #e0e0e0;
+    cursor:pointer;
+}
+span.foldopened  {
+    color: white;
+    VISIBILITY: visible;
+}
+span.foldclosed {
+    color: #666666;
+    VISIBILITY: hidden;
+}
+span.foldspecial {
+    color: #666666;
+    font-size: xx-small;
+    border-style: none solid solid none;
+    border-color: #CCCCCC;
+    border-width: 1;
+    font-family: sans-serif;
+    padding: 0em 0.1em 0em 0.1em;
+    background: #e0e0e0;
+    cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+<script type="text/javascript">
+// Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+// Mozilla 0.9.6.
+
+if (document.layers) {
+    //Netscape 4 specific code
+    pre = 'document.';
+    post = ''; }
+if (document.getElementById) {
+    //Netscape 6 specific code
+    pre = 'document.getElementById("';
+    post = '").style'; }
+if (document.all) {
+    //IE4+ specific code
+    pre = 'document.all.';
+    post = '.style'; }
+
+function layer_exists(layer) {
+    try {
+	eval(pre + layer + post);
+	return true; }
+    catch (error) {
+	return false; }}
+
+function show_layer(layer) {
+    eval(pre + layer + post).position = 'relative';
+    eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+    eval(pre + layer + post).visibility = 'hidden';
+    eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder);
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	hide_folding_layer(folder+'_'+i); }
+
+    hide_layer('hide'+folder);
+    hide_layer('show'+folder);
+    hide_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+    var i;
+    var folder = '1';
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+    var i;
+    var folder = '1';
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	show_folder_completely(folder+'_'+i); }
+}
+
+</script>
+<SPAN class="foldspecial" onclick="unfold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="fold_document()">All -</SPAN>
+<p><span style="font-size: 16pt; font-family: &quot;Liberation Sans&quot;, sans-serif; ">Krzysztof Strug&#10;An extended CV</span>
+    <p>
       This is extended version of CV, not intended to be read in full. The goal is to provide more insight to points mentioned briefly in the regular CV that reader found intriguing.
-    </p></span></div></div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1504603900FM"><div class="nodecontent">Personal Info</div>
-		<ul class="sub">
-	<li class="col" id="FMID_1264322502FM"><div class="nodecontent">Contact</div>
-		<ul class="subexp">
-	<li class="col" id="FMID_94879606FM"><div class="nodecontent">e-mail</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_228740374FM"><div class="nodecontent">name at surname dot xyz</div></li></ul></li>
-	<li class="col" id="FMID_489649035FM"><div class="nodecontent">www</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1690025067FM"><div class="nodecontent"><a href="http://www.strug.xyz">http://www.strug.xyz</a> <a href="http://www.strug.xyz"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li></ul></li>
-	<li class="col" id="FMID_1797690726FM"><div class="nodecontent">Born</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_42491660FM"><div class="nodecontent">1982-07-25</div></li>
-	<li class="exp" id="FMID_242752593FM"><div class="nodecontent">in Gdynia</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1939074663FM"><div class="nodecontent">Northern Poland</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_304667630FM"><div class="nodecontent">Curent place of residence</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_171890046FM"><div class="nodecontent">Cambridge, UK</div></li></ul></li>
-	<li class="col" id="FMID_1802514922FM"><div class="nodecontent">Social media</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1001086327FM"><div class="nodecontent"><a href="https://twitter.com/strugkr">twitter</a> <a href="https://twitter.com/strugkr"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="basic" id="FMID_1517175141FM"><div class="nodecontent"><a href="https://strugk.newsblur.com/">newsblur</a> <a href="https://strugk.newsblur.com/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="basic" id="FMID_229367313FM"><div class="nodecontent"><a href="https://www.linkedin.com/in/strugk">linkedin</a> <a href="https://www.linkedin.com/in/strugk"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="basic" id="FMID_1665567456FM"><div class="nodecontent"><a href="https://www.goodreads.com/review/list/20638544?shelf=read&amp;sort=date_read">good reads</a> <a href="https://www.goodreads.com/review/list/20638544?shelf=read&amp;sort=date_read"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li></ul></li>
-	<li class="col" style="background-color:#9999ff;" id="FMID_1192031706FM"><div class="nodecontent">Experience</div>
-		<ul class="subexp">
-	<li class="col" id="FMID_114226965FM"><div class="nodecontent">Research</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1030153086FM"><div class="nodecontent">mathematical modeling</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1812718384FM"><div class="nodecontent">devices</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_605894353FM"><div class="nodecontent">boilers</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1348287835FM"><div class="nodecontent">oxy-combustion</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_128656807FM"><div class="nodecontent">radiative and convective heat transfer</div></li>
-	<li class="basic" id="FMID_1335464370FM"><div class="nodecontent">finding optimal flue gas recirculation ratio</div></li></ul></li>
-	<li class="exp" id="FMID_289860500FM"><div class="nodecontent">biomass (with coal) co-firing</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1470239125FM"><div class="nodecontent">finding optimal biomass to coal ratio</div></li>
-	<li class="basic" id="FMID_1024453024FM"><div class="nodecontent">influence of newly introduced fuel on steam parameters</div></li></ul></li>
-	<li class="exp" id="FMID_623583189FM"><div class="nodecontent">flue gas recirculation</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_863628412FM"><div class="nodecontent">flue gas recirculation can improve heat transfer and efficiency, although needs additional investments and increases system complexity</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1354905100FM"><div class="nodecontent">fuel cells</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_3106314FM"><div class="nodecontent">Solid Oxide Fuel Cells systems</div></li>
-	<li class="basic" id="FMID_432669230FM"><div class="nodecontent">SOFC stacks</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_251455360FM"><div class="nodecontent">systems</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1966420383FM"><div class="nodecontent">power plants optimization</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1996936385FM"><div class="nodecontent">efficiency as a function of heat exchangers and gas composition functions</div></li></ul></li>
-	<li class="exp" id="FMID_1674026136FM"><div class="nodecontent">thermodynamic cycles</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_373930938FM"><div class="nodecontent">steam powet plants</div></li>
-	<li class="basic" id="FMID_1025633273FM"><div class="nodecontent">gas turbines</div></li>
-	<li class="basic" id="FMID_1209035913FM"><div class="nodecontent">internal combustion engines</div></li>
-	<li class="basic" id="FMID_891985460FM"><div class="nodecontent">adsorption cooling cycles</div></li></ul></li>
-	<li class="basic" id="FMID_944005686FM"><div class="nodecontent">smart district heating</div></li></ul></li>
-	<li class="exp" id="FMID_854127637FM"><div class="nodecontent">processes</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_993937946FM"><div class="nodecontent">heat exchange</div></li>
-	<li class="basic" id="FMID_1412454800FM"><div class="nodecontent">mass transfer</div></li>
-	<li class="exp" id="FMID_1489249379FM"><div class="nodecontent">chemical reactions</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1206489965FM"><div class="nodecontent">combustion</div></li>
-	<li class="basic" id="FMID_1711765389FM"><div class="nodecontent">pollutants decomposition</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_265548472FM"><div class="nodecontent">technology development</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1575734910FM"><div class="nodecontent">biomass CHP</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_631670383FM"><div class="nodecontent">new biomass-fired  CHP development</div></li>
-	<li class="basic" id="FMID_482630405FM"><div class="nodecontent">work included extensive literature review</div></li>
-	<li class="basic" id="FMID_151412567FM"><div class="nodecontent">potential solutions have been modeled and their performace calculated</div></li>
-	<li class="basic" id="FMID_1703653911FM"><div class="nodecontent">experimental  installation have been designed</div></li></ul></li>
-	<li class="exp" id="FMID_1641055861FM"><div class="nodecontent">NOx pollution mitigation</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1967238606FM"><div class="nodecontent">NOx reduction</div>
-		<ul class="sub">
-	<li class="col" id="FMID_1719646543FM"><div class="nodecontent">primary methods</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1891955155FM"><div class="nodecontent">supress NOx generation<br />(nitrogen oxides)</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1627008785FM"><div class="nodecontent">under-stechiometric conditions</div></li>
-	<li class="basic" id="FMID_1924193216FM"><div class="nodecontent">low temperature </div></li></ul></li></ul></li>
-	<li class="col" id="FMID_160276095FM"><div class="nodecontent">SNCR</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1039475763FM"><div class="nodecontent">Selective Non-Catalytic Reduction</div></li></ul></li>
-	<li class="col" id="FMID_266477574FM"><div class="nodecontent">SCR</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1831856290FM"><div class="nodecontent">Selective Catalytic Reduction</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_843975051FM"><div class="nodecontent">other oportunities / synergies</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1798473614FM"><div class="nodecontent">SOx</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1785964062FM"><div class="nodecontent">Sulfur oxides</div></li>
-	<li class="basic" id="FMID_1161066481FM"><div class="nodecontent">studies on SOx reduction in recirculated flue gases</div></li></ul></li>
-	<li class="exp" id="FMID_697632936FM"><div class="nodecontent">NH3</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_503202994FM"><div class="nodecontent">ammonia</div></li>
-	<li class="basic" id="FMID_1988215003FM"><div class="nodecontent">used in power plants to reduce NOx emissions</div></li></ul></li>
-	<li class="exp" id="FMID_1464457032FM"><div class="nodecontent">PM</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1773500032FM"><div class="nodecontent">Particulate matter</div></li>
-	<li class="basic" id="FMID_1961586853FM"><div class="nodecontent">ash - ammonia interactions</div></li>
-	<li class="basic" id="FMID_772164448FM"><div class="nodecontent">Influence of these interaction on ESP performance</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_397419546FM"><div class="nodecontent">ontology of technologies</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1013149849FM"><div class="nodecontent">development of tool for assesement of technologies basing on graphene</div></li>
-	<li class="basic" id="FMID_145112232FM"><div class="nodecontent">the tool used technology maps of technology to predict feasibility of new ideas</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_79104128FM"><div class="nodecontent">measurments / experiments</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1828248082FM"><div class="nodecontent">flue gas composition and temperature </div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1070796102FM"><div class="nodecontent">laboratory</div></li>
-	<li class="basic" id="FMID_481906350FM"><div class="nodecontent">pilot scale</div></li>
-	<li class="basic" id="FMID_186464750FM"><div class="nodecontent">industrial</div></li></ul></li>
-	<li class="basic" id="FMID_809129268FM"><div class="nodecontent">designing experiments</div></li>
-	<li class="basic" id="FMID_1934823559FM"><div class="nodecontent">scheduling experiments</div></li></ul></li>
-	<li class="exp" id="FMID_1822313372FM"><div class="nodecontent">machine learning</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_344725990FM"><div class="nodecontent">Kohonnen self-organising maps</div></li>
-	<li class="basic" id="FMID_848527832FM"><div class="nodecontent">random forests</div></li>
-	<li class="basic" id="FMID_1209585663FM"><div class="nodecontent">decision trees</div></li>
-	<li class="basic" id="FMID_1530998952FM"><div class="nodecontent">other</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_1958144987FM"><div class="nodecontent">Consulting</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_852698373FM"><div class="nodecontent">feasibility sudies</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1124717673FM"><div class="nodecontent">energy sector</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1172925480FM"><div class="nodecontent">environmental equipment feasbility at existing power plants</div></li>
-	<li class="basic" id="FMID_341364997FM"><div class="nodecontent">power plant retrofitting</div></li>
-	<li class="basic" id="FMID_1733620802FM"><div class="nodecontent">industrial power and heat sources</div></li></ul></li>
-	<li class="exp" id="FMID_1103946018FM"><div class="nodecontent">data science solutions</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1839848276FM"><div class="nodecontent">technology taxonomy</div></li>
-	<li class="basic" id="FMID_502533719FM"><div class="nodecontent">fraud taxonomy</div></li>
-	<li class="basic" id="FMID_1103117990FM"><div class="nodecontent">churn prediction</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1344540773FM"><div class="nodecontent">techno-economic evaluations</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1004560934FM"><div class="nodecontent">investment analysis</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1765795182FM"><div class="nodecontent">NPV, IRR etc.</div></li></ul></li>
-	<li class="basic" id="FMID_605033517FM"><div class="nodecontent">monte carlo risk assesment</div></li></ul></li>
-	<li class="exp" id="FMID_1138378794FM"><div class="nodecontent">strategic analysis</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_302097517FM"><div class="nodecontent">problems structurization</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1064572897FM"><div class="nodecontent">Means-Ends Analysis (MEA)</div></li>
-	<li class="basic" id="FMID_1735135781FM"><div class="nodecontent">Mutually-Exclusive-Collectively-Exhaustive (MECE)</div></li></ul></li>
-	<li class="basic" id="FMID_54903473FM"><div class="nodecontent">market boundaries identification</div></li>
-	<li class="basic" id="FMID_1935910418FM"><div class="nodecontent">resources utilization analysis</div></li></ul></li>
-	<li class="exp" id="FMID_871529133FM"><div class="nodecontent">heating systems design</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1828081184FM"><div class="nodecontent">advising in solar &amp; heat pump heating systems planning</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_598155470FM"><div class="nodecontent">Management</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1327824403FM"><div class="nodecontent">research project management</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1510632682FM"><div class="nodecontent">writing research projects proposals</div></li>
-	<li class="exp" id="FMID_1904349336FM"><div class="nodecontent">arranging research team</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1043122002FM"><div class="nodecontent">within the organisation</div></li>
-	<li class="basic" id="FMID_1985889057FM"><div class="nodecontent">from outside of the organization</div></li></ul></li>
-	<li class="basic" id="FMID_288612970FM"><div class="nodecontent">managing tasks within the team</div></li>
-	<li class="basic" id="FMID_1717008249FM"><div class="nodecontent">keeping the team focused on given tasks</div></li>
-	<li class="basic" id="FMID_1856404435FM"><div class="nodecontent">reporting to funding agency</div></li></ul></li>
-	<li class="exp" id="FMID_1648791440FM"><div class="nodecontent">consulting project managment</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_94869890FM"><div class="nodecontent">proposal drafting</div></li>
-	<li class="basic" id="FMID_1907165031FM"><div class="nodecontent">consortium coordination</div></li>
-	<li class="basic" id="FMID_1108577069FM"><div class="nodecontent">budget and schedule planning</div></li>
-	<li class="basic" id="FMID_1646134874FM"><div class="nodecontent">negotiations</div></li></ul></li>
-	<li class="exp" id="FMID_1646302717FM"><div class="nodecontent">workshops leader/teacher</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1474700846FM"><div class="nodecontent">workshops planning</div></li>
-	<li class="basic" id="FMID_594113911FM"><div class="nodecontent">presenting background</div></li>
-	<li class="basic" id="FMID_1780335127FM"><div class="nodecontent">organizing work</div></li>
-	<li class="basic" id="FMID_1357105347FM"><div class="nodecontent">motivating and keeping everybody busy</div></li></ul></li>
-	<li class="exp" id="FMID_1710852552FM"><div class="nodecontent">technology overview and monitoring</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_663908884FM"><div class="nodecontent">writing guidelines</div></li>
-	<li class="basic" id="FMID_10664193FM"><div class="nodecontent">preparing schedule</div></li>
-	<li class="basic" id="FMID_679179334FM"><div class="nodecontent">overseeing relevance of submitted data</div></li>
-	<li class="basic" id="FMID_1054799763FM"><div class="nodecontent">mapping tagged knowledge</div></li></ul></li></ul></li></ul></li>
-	<li class="col" style="background-color:#99ffcc;" id="FMID_392944833FM"><div class="nodecontent">Interests</div>
-		<ul class="subexp">
-	<li class="col" id="FMID_312496087FM"><div class="nodecontent">Technology</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_353219147FM"><div class="nodecontent">energy technologies</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_845261188FM"><div class="nodecontent">renewable energy</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1757989849FM"><div class="nodecontent">solar</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1255887081FM"><div class="nodecontent">artificial photosynthesis</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1322683460FM"><div class="nodecontent">group of technologies aiming at producing chemical fuel from solar radiation and abundant substances (like H2O or CO2)</div></li>
-	<li class="basic" id="FMID_1958837525FM"><div class="nodecontent">natural photosynthesis has very low efficiency (~1%)</div></li>
-	<li class="basic" id="FMID_1275274644FM"><div class="nodecontent">relativly to biomass artificial photosynthesis should be more efficient and the product should easier to handle and store</div></li></ul></li>
-	<li class="exp" id="FMID_1188068743FM"><div class="nodecontent">concentrated solar power</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_478793576FM"><div class="nodecontent">ORC</div></li>
-	<li class="basic" id="FMID_1865412744FM"><div class="nodecontent">supercriticalCO2</div></li>
-	<li class="basic" id="FMID_1276870152FM"><div class="nodecontent">dry cooling towers</div></li></ul></li>
-	<li class="exp" id="FMID_1975823282FM"><div class="nodecontent">solar thermal</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_958061167FM"><div class="nodecontent">using high exergy sources for heating domestic hot water and heating buildings,</div></li>
-	<li class="basic" id="FMID_1723552423FM"><div class="nodecontent">solar thermal collectors allow to gather and store low-grade heat</div></li></ul></li>
-	<li class="exp" id="FMID_633186981FM"><div class="nodecontent">solar pv</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1855090429FM"><div class="nodecontent">technology doing huge leaps in costs and efficiency</div></li>
-	<li class="basic" id="FMID_1105019344FM"><div class="nodecontent">intagrating with buildings and machines is an interesting direction, as putting huge areas of PV on the ground seems a waste of land</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_693359547FM"><div class="nodecontent">hydro</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_390905089FM"><div class="nodecontent">microhydro power plants may offer dispatchable energy almost independent from the weather</div></li></ul></li>
-	<li class="exp" id="FMID_1433469644FM"><div class="nodecontent">wind</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1290086889FM"><div class="nodecontent">this seems to be mature technology but farm optimization and novel offshore mounting ideas are worth keeping an eye on them</div></li></ul></li>
-	<li class="exp" id="FMID_561164236FM"><div class="nodecontent">geothermal</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1662864109FM"><div class="nodecontent">ORC</div></li>
-	<li class="basic" id="FMID_1096841599FM"><div class="nodecontent">supercriticalCO2</div></li>
-	<li class="basic" id="FMID_1902827047FM"><div class="nodecontent">dry cooling towers</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_95346563FM"><div class="nodecontent">conventional energy sources</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_852508527FM"><div class="nodecontent">biomass</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_877666389FM"><div class="nodecontent">biomass utiliziation is tricky</div></li>
-	<li class="basic" id="FMID_115350439FM"><div class="nodecontent">there is some food waste that is hard to utilize otherwise</div></li></ul></li>
-	<li class="exp" id="FMID_1385303492FM"><div class="nodecontent">fossil fuels</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1863469693FM"><div class="nodecontent">being involved in some CCS technologies development <br />left me with some curiosity about future of fossils utilization</div></li></ul></li>
-	<li class="exp" id="FMID_1391053399FM"><div class="nodecontent">nuclear</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_212248347FM"><div class="nodecontent">fission</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_717904016FM"><div class="nodecontent">big potential that is seams to lack good idea for further development</div></li>
-	<li class="basic" id="FMID_1279086039FM"><div class="nodecontent">combination of fission reactor and steam turbines forces some expensive designs and safety measures</div></li>
-	<li class="basic" id="FMID_1830178239FM"><div class="nodecontent">this sector awaits for disruptive innovation but I stilled havent figured the direction</div></li></ul></li>
-	<li class="exp" id="FMID_206845349FM"><div class="nodecontent">fusion</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1852014840FM"><div class="nodecontent">could be a perfect source for deep space exploration</div></li>
-	<li class="basic" id="FMID_873019659FM"><div class="nodecontent">fascinating edge of human abilities. Idea known for decades still waits for sensible implementation</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1041297538FM"><div class="nodecontent">energy storage</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1819781517FM"><div class="nodecontent">electricity storage</div>
-		<ul class="sub">
-	<li class="col" id="FMID_1705087688FM"><div class="nodecontent">pumped hydro</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_728358012FM"><div class="nodecontent"><a href="http://www.scientificamerican.com/article/energy-storage-hits-the-rails-out-west/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+sciam%2Fgreen-living+%28Topic%3A+Green+Living%29">but also rail-dirt on a hill</a> <a href="http://www.scientificamerican.com/article/energy-storage-hits-the-rails-out-west/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+sciam%2Fgreen-living+%28Topic%3A+Green+Living%29"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
-	<li class="col" id="FMID_1374436877FM"><div class="nodecontent">batteries</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_432536236FM"><div class="nodecontent">especially flow batteries with charged electrolyte refueling option</div></li></ul></li>
-	<li class="col" id="FMID_1028940277FM"><div class="nodecontent">flywheels</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_556909168FM"><div class="nodecontent"><a href="http://cleantechnica.com/2015/05/22/energy-train-store-10-dutch-electricity/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+IM-cleantechnica+%28CleanTechnica%29">but also maglev trains momentum</a> <a href="http://cleantechnica.com/2015/05/22/energy-train-store-10-dutch-electricity/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+IM-cleantechnica+%28CleanTechnica%29"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_14819356FM"><div class="nodecontent">heat storage</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_807210238FM"><div class="nodecontent">PCM - phase change materials</div></li>
-	<li class="basic" id="FMID_1970273992FM"><div class="nodecontent">system optimisation</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1807133216FM"><div class="nodecontent">energy efficiency</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_138295489FM"><div class="nodecontent">virtual power plants</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_541594060FM"><div class="nodecontent">turning some infrastructure off to reduce peak demand</div></li></ul></li>
-	<li class="exp" id="FMID_763740832FM"><div class="nodecontent">heat pumps</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1313566837FM"><div class="nodecontent">progress in installed power of variable RE will be a factor forcing electrical heating of buildings.</div></li>
-	<li class="basic" id="FMID_984478514FM"><div class="nodecontent">heating pumps are much better option for electric heatng than traditional electric heaters</div></li></ul></li>
-	<li class="exp" id="FMID_1974241243FM"><div class="nodecontent">building design</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1325775700FM"><div class="nodecontent">integration of energy technologies into the buildings</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1391787549FM"><div class="nodecontent">information technologies</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_84882437FM"><div class="nodecontent">computer science</div></li>
-	<li class="exp" id="FMID_1265406626FM"><div class="nodecontent">machine learning</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_708121180FM"><div class="nodecontent">a.k.a. data mining</div></li>
-	<li class="basic" id="FMID_1914087418FM"><div class="nodecontent">a.k.a. artificial intelligence</div></li></ul></li>
-	<li class="exp" id="FMID_123841632FM"><div class="nodecontent">interoperability</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1913572975FM"><div class="nodecontent">standards in interfaces allow divesity and complexity</div></li></ul></li>
-	<li class="exp" id="FMID_1868286893FM"><div class="nodecontent">free and open source software</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1984130090FM"><div class="nodecontent">GNU/Linux</div></li>
-	<li class="basic" id="FMID_1211308954FM"><div class="nodecontent">exploring possibilities of software</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1151034017FM"><div class="nodecontent">emerging/disruptive technologies</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1319121036FM"><div class="nodecontent">technology niches/gaps</div></li>
-	<li class="basic" id="FMID_901471068FM"><div class="nodecontent">technology readiness assessment</div></li>
-	<li class="basic" id="FMID_867997421FM"><div class="nodecontent">innovation strategies</div></li></ul></li>
-	<li class="exp" id="FMID_1132397788FM"><div class="nodecontent">infrastructure / urbanization</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1977961337FM"><div class="nodecontent">water and sewer systems</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1362022305FM"><div class="nodecontent">but also smart ways to go without a complex system</div></li></ul></li>
-	<li class="exp" id="FMID_628860915FM"><div class="nodecontent">electric grid</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_373039946FM"><div class="nodecontent">international connectors</div></li>
-	<li class="basic" id="FMID_115405015FM"><div class="nodecontent">off-grid installations</div></li>
-	<li class="basic" id="FMID_1874623732FM"><div class="nodecontent">energy markets</div></li>
-	<li class="basic" id="FMID_372877018FM"><div class="nodecontent">energy subsidy schemes</div></li></ul></li>
-	<li class="exp" id="FMID_291602651FM"><div class="nodecontent">traffic organization</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1016473470FM"><div class="nodecontent">low tempo zones</div></li>
-	<li class="basic" id="FMID_337335075FM"><div class="nodecontent">bike lanes</div></li>
-	<li class="exp" id="FMID_1147303744FM"><div class="nodecontent">logistics</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_24691136FM"><div class="nodecontent">rail vs trucks vs ships</div></li>
-	<li class="basic" id="FMID_1766375653FM"><div class="nodecontent">sustianbility and economics</div></li></ul></li>
-	<li class="basic" id="FMID_1884158680FM"><div class="nodecontent">public transport</div></li></ul></li>
-	<li class="exp" id="FMID_57780974FM"><div class="nodecontent">city / district zoning and composition</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_557979767FM"><div class="nodecontent">creating lively cities</div></li>
-	<li class="basic" id="FMID_619550873FM"><div class="nodecontent">mixing industry with residential and commerce</div></li></ul></li></ul></li></ul></li>
-	<li class="col" id="FMID_55762447FM"><div class="nodecontent">Economy</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1505459486FM"><div class="nodecontent">sustainability</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_392533286FM"><div class="nodecontent">resource shortage / circular economy</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_324937283FM"><div class="nodecontent">usage efficiency</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_475307254FM"><div class="nodecontent">minimizing animal based substances</div></li></ul></li>
-	<li class="basic" id="FMID_57535516FM"><div class="nodecontent">reusing</div></li>
-	<li class="basic" id="FMID_771703004FM"><div class="nodecontent">recycling</div></li>
-	<li class="basic" id="FMID_1923597973FM"><div class="nodecontent">upcycling</div></li></ul></li>
-	<li class="exp" id="FMID_143491275FM"><div class="nodecontent">climate change</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_383106591FM"><div class="nodecontent">carbon taxation</div></li>
-	<li class="basic" id="FMID_1069988506FM"><div class="nodecontent">low-carbon technologies</div></li>
-	<li class="exp" id="FMID_1996988251FM"><div class="nodecontent">emission reduction</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_856547413FM"><div class="nodecontent">industrial</div></li>
-	<li class="basic" id="FMID_1721518732FM"><div class="nodecontent">transport</div></li>
-	<li class="basic" id="FMID_424872932FM"><div class="nodecontent">animal</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_599234406FM"><div class="nodecontent">biodiversity</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_507884199FM"><div class="nodecontent">wildlife conservation</div></li>
-	<li class="basic" id="FMID_1563055422FM"><div class="nodecontent">small scale farming</div></li>
-	<li class="basic" id="FMID_710259228FM"><div class="nodecontent">farming seeds diversity</div></li></ul></li>
-	<li class="exp" id="FMID_1844046905FM"><div class="nodecontent">social inclusiveness</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_915138063FM"><div class="nodecontent">human rights</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1903211154FM"><div class="nodecontent">developing countries</div>
-		<ul class="sub">
-	<li class="col" id="FMID_565097495FM"><div class="nodecontent">systemic help</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1168638170FM"><div class="nodecontent">fair trade certification</div></li></ul></li>
-	<li class="col" id="FMID_1636229077FM"><div class="nodecontent">infrastructure needs</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_981596742FM"><div class="nodecontent">energy</div></li>
-	<li class="basic" id="FMID_1645570155FM"><div class="nodecontent">water</div></li>
-	<li class="basic" id="FMID_1382357224FM"><div class="nodecontent">telecommunication</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_521333145FM"><div class="nodecontent">macroeconomics</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_333868301FM"><div class="nodecontent">taxes</div></li>
-	<li class="basic" id="FMID_1056381363FM"><div class="nodecontent">policies</div></li>
-	<li class="basic" id="FMID_491426066FM"><div class="nodecontent">tariffs</div></li>
-	<li class="basic" id="FMID_1623237296FM"><div class="nodecontent">subsidies</div></li></ul></li>
-	<li class="exp" id="FMID_65414322FM"><div class="nodecontent">openness</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1276741714FM"><div class="nodecontent">transparency</div></li>
-	<li class="basic" id="FMID_1174042665FM"><div class="nodecontent">open access</div></li>
-	<li class="basic" id="FMID_1387748318FM"><div class="nodecontent">open source</div></li>
-	<li class="basic" id="FMID_671056211FM"><div class="nodecontent">open science</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_1900645200FM"><div class="nodecontent">Management</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_359097196FM"><div class="nodecontent">psychology</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1153757544FM"><div class="nodecontent">variaty of human profils</div></li>
-	<li class="basic" id="FMID_567375180FM"><div class="nodecontent">discovering peoples personal goals</div></li></ul></li>
-	<li class="exp" id="FMID_499882021FM"><div class="nodecontent">innovation facilitation</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1705220864FM"><div class="nodecontent">engagement</div></li>
-	<li class="basic" id="FMID_340905882FM"><div class="nodecontent">rewarding system</div></li></ul></li>
-	<li class="exp" id="FMID_774364916FM"><div class="nodecontent">strategy development</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1292701279FM"><div class="nodecontent">values</div></li>
-	<li class="basic" id="FMID_1562467856FM"><div class="nodecontent">long term goals</div></li>
-	<li class="basic" id="FMID_1746081790FM"><div class="nodecontent">futurology</div></li></ul></li>
-	<li class="exp" id="FMID_17275552FM"><div class="nodecontent">complex decision making</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_93361902FM"><div class="nodecontent">problem structurization</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1174936505FM"><div class="nodecontent">f.e. MECE, means-ends</div></li></ul></li>
-	<li class="basic" id="FMID_1212889304FM"><div class="nodecontent">optimization</div></li>
-	<li class="basic" id="FMID_1005636394FM"><div class="nodecontent">expert algorithms</div></li></ul></li></ul></li></ul></li>
-	<li class="col" style="background-color:#ffcc99;" id="FMID_1178879224FM"><div class="nodecontent">Employment</div>
-		<ul class="subexp">
-	<li class="col" id="FMID_1464577490FM"><div class="nodecontent">ICF</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_119796260FM"><div class="nodecontent">2018-present</div></li>
-	<li class="basic" id="FMID_577769152FM"><div class="nodecontent">Senior Consultant</div></li>
-	<li class="basic" id="FMID_1320081368FM"><div class="nodecontent">London</div></li>
-	<li class="basic" id="FMID_686000607FM"><div class="nodecontent"><a href="https://www.icf.com/company/locations/european-region">link</a> <a href="https://www.icf.com/company/locations/european-region"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="col" id="FMID_1090893627FM"><div class="nodecontent">summary</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1539770326FM"><div class="nodecontent">Policy research and advise. Technical reviews of technologies and market assessments. Data anaysis and report writing in techno-economic evaluations of investments Technical assistance for countries and European Commission;</div></li></ul></li>
-	<li class="col" id="FMID_1802216228FM"><div class="nodecontent">about the organization</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_773371946FM"><div class="nodecontent">ICF is a consulting copmany, headquartered in Fairfax, Va, US. It employs over 7 000 people advising in infrastracture related areas like: buildings, trasnport and energy. </div></li></ul></li>
-	<li class="col" id="FMID_1713350795FM"><div class="nodecontent">my role</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_693129179FM"><div class="nodecontent">As a Consultant I have contacted clients at all levels while leading process of writing technical reports and conducting needed research. My clients include BEIS, European Commission, national agencies. My areas of expertise were focused on, but not limited to: boiler techonologies, heat pumps, ORC modules, CCUS, industrial heat recovery and power generation.</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_156379570FM"><div class="nodecontent">Ramboll</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_119872025FM"><div class="nodecontent">2016-2018</div></li>
-	<li class="basic" id="FMID_896530408FM"><div class="nodecontent">Consultant</div></li>
-	<li class="basic" id="FMID_1483027589FM"><div class="nodecontent">Warsaw / Copenhagen / Newcastle, PL/DK/UK</div></li>
-	<li class="basic" id="FMID_355235008FM"><div class="nodecontent"><a href="http://www.ramboll.com/services-and-sectors/energy">link</a> <a href="http://www.ramboll.com/services-and-sectors/energy"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="col" id="FMID_320689823FM"><div class="nodecontent">summary</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1319767864FM"><div class="nodecontent">Data anaysis and report writing in techno-economic evaluations of investments and maintenance programmes; energy technology advisory; feasibility studies; due dilligence; tenders technical assesment;</div></li></ul></li>
-	<li class="exp" id="FMID_1341876773FM"><div class="nodecontent">about organization</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_39354239FM"><div class="nodecontent">Ramboll is engineering and consulting copmany, headquartered in Copnehagen, DK. It employs over 14 000 people advising in infrastracture related areas like: buildings, trasnport and energy. Ramboll aims at bringing scandinavian standard and quality of living, as well as values to the world.</div></li></ul></li>
-	<li class="col" id="FMID_1086057079FM"><div class="nodecontent">my role</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_140260664FM"><div class="nodecontent">As a Consultant I have contacted clients at all levels while leading process of writing technical reports and conducting needed research. My clients included power utilities, industrial plants and factories. My areas of expertise were focused on, but not limited to: boiler techonologies, flue gas cleaning, gasifier systems, ORC modules, maintenance programme analysis and forecasts, risk identification and assessment.</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_779092306FM"><div class="nodecontent">Centre for Industrial Applications of Mathematics <br />and Systems Engineering, <br />Polish Academy of Sciences (CIAMSE PAS)</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1058077561FM"><div class="nodecontent">2014-2015</div></li>
-	<li class="basic" id="FMID_209790919FM"><div class="nodecontent">Senior Researcher</div></li>
-	<li class="basic" id="FMID_1696507370FM"><div class="nodecontent">Warsaw / Cambridge, PL/UK</div></li>
-	<li class="basic" id="FMID_1937236026FM"><div class="nodecontent"><a href="http://maths.com.pl/?q=english">link</a> <a href="http://maths.com.pl/?q=english"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="exp" id="FMID_792106149FM"><div class="nodecontent">summary:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_494693758FM"><div class="nodecontent">Technical consulting; research in systems modelling; machine learning data semantics; project management and coordination; leader of projects focused on disruptive technologies.</div></li></ul></li>
-	<li class="exp" id="FMID_1728405576FM"><div class="nodecontent">about organization:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_339106514FM"><div class="nodecontent">the Centre is a joint initiative of two institutes of Polish Academy of Sciences: Systems Research Institute and Institute of Mathematics. Created by dr Kamil Kulesza after his Cambridge postdoc and based on idea of ESGI (European Study Groups for Industry) - diverse groups of mathematical minds tackling real industry problems. Centre works with industry, performing research projects for various companies from all sectors of economy.</div></li></ul></li>
-	<li class="exp" id="FMID_666667161FM"><div class="nodecontent">my role:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_354073247FM"><div class="nodecontent">As a Senior Researcher I have led projects in areas of technology. I managed technology development monitoring and technology niches discovery process. I co-organized summer data science workshops (a part of financial data mining). I have participated in creation of semantic knowledge representation systems (taxonomies, ontologies).</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_332419418FM"><div class="nodecontent">Energy Center of the Netherlands (ECN)</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1342662409FM"><div class="nodecontent">April-August 2013</div></li>
-	<li class="basic" id="FMID_1773025559FM"><div class="nodecontent">Visiting Researcher</div></li>
-	<li class="basic" id="FMID_838238692FM"><div class="nodecontent">Petten / Alkmaar, NL</div></li>
-	<li class="basic" id="FMID_1977833948FM"><div class="nodecontent"><a href="https://www.ecn.nl/">link</a> <a href="https://www.ecn.nl/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="exp" id="FMID_592071557FM"><div class="nodecontent">summary</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1971738008FM"><div class="nodecontent">Techno-economic evaluation of existing  power plant modernization to bioenergy production and  negative CO2 emission.</div></li></ul></li>
-	<li class="exp" id="FMID_1197782665FM"><div class="nodecontent">about organization:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1728569758FM"><div class="nodecontent">Biomass Department of ECN foceses on research and development of sustainable biomass conversion for heat and electricity production. Main topics of interest for the deparment are: gasification, syngas cleaning, torrefaction, biochemistry.</div></li></ul></li>
-	<li class="exp" id="FMID_1908353044FM"><div class="nodecontent">my role:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_185713484FM"><div class="nodecontent">As a visiting Researcher my main task was to deliver objectives of one of CATO2 project tasks, that  was techno-economic analysis of biomass co-firing power plant combined with CCS (Carbon Capture and Storage).</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1243328123FM"><div class="nodecontent">Institute of Power Engineering (IEn)</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_739804188FM"><div class="nodecontent">2007-2014</div></li>
-	<li class="basic" id="FMID_294391565FM"><div class="nodecontent">Thermal Processes Department</div></li>
-	<li class="basic" id="FMID_1685134537FM"><div class="nodecontent">Engineer</div></li>
-	<li class="basic" id="FMID_66034767FM"><div class="nodecontent">Warsaw, PL</div></li>
-	<li class="basic" id="FMID_885645576FM"><div class="nodecontent"><a href="https://ien.com.pl/cpc-thermal-processing-department">link</a> <a href="https://ien.com.pl/cpc-thermal-processing-department"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="exp" id="FMID_1343903865FM"><div class="nodecontent">summary</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_759343860FM"><div class="nodecontent">Mathematical modelling of energy systems, industry consulting and techno-economic analysis;  project management and coordination; research and experimental work on NOx emissions and its mitigation (SCR and SNCR) and oxy-combustion with CCS, μCHP research (fuel cells, ORC, Stirling engines).</div></li></ul></li>
-	<li class="exp" id="FMID_1392925981FM"><div class="nodecontent">about organization:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_461738612FM"><div class="nodecontent">Thermal Processes Department is fast growing unit that grows from experience with mills and burners in coal power plants expertise. The scope had broadened in XXI century and included gasification and solid oxide fuel cells, biomass conversion, flue gas treatment. Formally three teams have been formed: combustion, gasification, fuel cells.</div></li></ul></li>
-	<li class="exp" id="FMID_533568501FM"><div class="nodecontent">my role:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1362308856FM"><div class="nodecontent">I have been recruited as an engineer for fuel cells systems development (auxiliaries, heat exchange optimization). Due to slow development of core fuel cell technology I started to take part in many consulting projects for power plants, including fuel gas treatment, fuel flexibility. Because of intense commitment to those consulting tasks I have been formally assigned to Combustion Team, but I have been an interconnector between the teams and a person dealing with subjects not being the core competence of the department. One of the most important projects was starting development of new line of interest in the department: biomass fired mini CHP (Combined Heat and Power).</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_421200268FM"><div class="nodecontent">Polska Ekologia (poleko)</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_202565188FM"><div class="nodecontent">2006-2007</div></li>
-	<li class="basic" id="FMID_884518264FM"><div class="nodecontent">solar energy  &amp; heat pumps</div></li>
-	<li class="basic" id="FMID_1277235646FM"><div class="nodecontent">Technical Adviser</div></li>
-	<li class="basic" id="FMID_761148704FM"><div class="nodecontent"><a href="http://poleko.pl/">link</a> <a href="http://poleko.pl/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="exp" id="FMID_593435763FM"><div class="nodecontent">summary</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1925325655FM"><div class="nodecontent">Consulting individual and industry clients; design of large solar heating plants; giving solar energy lectures to heating system installers.</div></li></ul></li>
-	<li class="exp" id="FMID_319158110FM"><div class="nodecontent">about organization:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_4895806FM"><div class="nodecontent">Polska Ekologia was a small company founded by author of the first polish book about solar energy Miroslaw Zawadzki. It was a main distributor of Sunex solar collectors in Poland (Sunex mostly designed and produced collectors for western Europe under other brands). Company organised weekly one-day courses about solar energy for installers and designers.</div></li></ul></li>
-	<li class="exp" id="FMID_1020774441FM"><div class="nodecontent">my role:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1573033921FM"><div class="nodecontent">As a Technical Adviser I have helped to design solar (and heat pump) systems. I have been the whole technical department in company so I gave lectures, wrote technical documentation, made costs calculations and investment return assessment.</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_709753113FM"><div class="nodecontent">other experiences</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1453838897FM"><div class="nodecontent">Transition Technologies (TT)</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1183931335FM"><div class="nodecontent">2006-2007</div></li>
-	<li class="basic" id="FMID_754066134FM"><div class="nodecontent">artificial inteligence and control systems</div></li>
-	<li class="exp" id="FMID_984785432FM"><div class="nodecontent">internship and MSc thesis</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1825406288FM"><div class="nodecontent">"Selforganising Kohenen neural networks usability <br />in energy market transactions evaluations"</div></li></ul></li>
-	<li class="basic" id="FMID_730461805FM"><div class="nodecontent"><a href="http://tt.com.pl/en/">link</a> <a href="http://tt.com.pl/en/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
-	<li class="exp" id="FMID_1343689347FM"><div class="nodecontent">Amnesty International</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1694370808FM"><div class="nodecontent">2006</div></li>
-	<li class="basic" id="FMID_5812937FM"><div class="nodecontent">human rights NGO</div></li>
-	<li class="basic" id="FMID_584772607FM"><div class="nodecontent">fundraising</div></li>
-	<li class="basic" id="FMID_1260687382FM"><div class="nodecontent"><a href="http://amnesty.org.pl/">link</a> <a href="http://amnesty.org.pl/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
-	<li class="exp" id="FMID_676708788FM"><div class="nodecontent">Zielone Mazowsze</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_379636358FM"><div class="nodecontent">2005 -2007</div></li>
-	<li class="basic" id="FMID_1105307150FM"><div class="nodecontent">local, Warsaw green watchdog</div></li>
-	<li class="basic" id="FMID_1440177233FM"><div class="nodecontent">public transport evaluation projects</div></li>
-	<li class="basic" id="FMID_372150624FM"><div class="nodecontent"><a href="http://www.zm.org.pl/">link</a> <a href="http://www.zm.org.pl/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
-	<li class="exp" id="FMID_546877003FM"><div class="nodecontent">Zielone Wiadomości</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_428547699FM"><div class="nodecontent">2013-2015</div></li>
-	<li class="basic" id="FMID_1835552738FM"><div class="nodecontent">translating articles from english to polish</div></li>
-	<li class="basic" id="FMID_1270047850FM"><div class="nodecontent">topics surrounding climate and finance</div></li></ul></li>
-	<li class="exp" id="FMID_1570123299FM"><div class="nodecontent">other minor volunteering</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_775551776FM"><div class="nodecontent">AUR package maintainer</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1462585739FM"><div class="nodecontent">Arch User Repository</div></li>
-	<li class="basic" id="FMID_432229354FM"><div class="nodecontent">Arch Linux</div></li>
-	<li class="basic" id="FMID_301430921FM"><div class="nodecontent">2013-now</div></li>
-	<li class="basic" id="FMID_486948588FM"><div class="nodecontent"><a href="https://aur4.archlinux.org/packages/firefox-aurora-pl">package link</a> <a href="https://aur4.archlinux.org/packages/firefox-aurora-pl"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
-	<li class="exp" id="FMID_18779577FM"><div class="nodecontent">Wikipedia editor</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1768381180FM"><div class="nodecontent">2003-now</div></li>
-	<li class="basic" id="FMID_921872015FM"><div class="nodecontent">1000+ edits</div></li>
-	<li class="basic" id="FMID_913973608FM"><div class="nodecontent"><a href="https://pl.wikipedia.org/w/index.php?title=Specjalna:Wk%C5%82ad/Strug&amp;dir=prev&amp;offset=20040203224739&amp;limit=500&amp;target=Strug">mostly polish wikipedia</a> <a href="https://pl.wikipedia.org/w/index.php?title=Specjalna:Wk%C5%82ad/Strug&amp;dir=prev&amp;offset=20040203224739&amp;limit=500&amp;target=Strug"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="basic" id="FMID_898172762FM"><div class="nodecontent"><a href="https://en.wikipedia.org/w/index.php?limit=50&amp;tagfilter=&amp;title=Special%3AContributions&amp;contribs=user&amp;target=Strug">english is still lean</a> <a href="https://en.wikipedia.org/w/index.php?limit=50&amp;tagfilter=&amp;title=Special%3AContributions&amp;contribs=user&amp;target=Strug"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1759478639FM"><div class="nodecontent">Software Carpentry</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_388821253FM"><div class="nodecontent">secondary instructor at Data Carpentry workshops</div></li></ul></li></ul></li></ul></li>
-	<li class="col" style="background-color:#ff99ff;" id="FMID_851668007FM"><div class="nodecontent">Education</div>
-		<ul class="subexp">
-	<li class="col" id="FMID_651311555FM"><div class="nodecontent">BEng</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1955069334FM"><div class="nodecontent">Mechanical Engineering / Renewable Energy Technologies</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_504032089FM"><div class="nodecontent">Warsaw University of Technology;</div></li>
-	<li class="basic" id="FMID_5043949FM"><div class="nodecontent">Power and Aeronautical Engineering Faculty</div></li>
-	<li class="basic" id="FMID_49265081FM"><div class="nodecontent">2001-2005</div></li>
-	<li class="exp" id="FMID_1125371884FM"><div class="nodecontent">Summary</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_112135318FM"><div class="nodecontent">Mechanical (classical, solid state, fluid and thermodynamic) and electrical focused courses with atmosphere and sun physics and hydrology basics followed by technology projects including solar and wind but also nuclear technology.</div></li></ul></li></ul></li></ul></li>
-	<li class="col" id="FMID_1533887987FM"><div class="nodecontent">MSc</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1940092896FM"><div class="nodecontent">Environmental  Engineering / Environmental Problems of Thermal Power Plants</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1535487691FM"><div class="nodecontent">Warsaw University of Technology;</div></li>
-	<li class="basic" id="FMID_1796429523FM"><div class="nodecontent">Power and Aeronautical Engineering Faculty</div></li>
-	<li class="basic" id="FMID_284644415FM"><div class="nodecontent">2005-2007</div></li>
-	<li class="exp" id="FMID_1011562490FM"><div class="nodecontent">Summary:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_770971060FM"><div class="nodecontent">Chemistry and thermodynamics focused courses with special insight to fuel characterization, energy policies, systems engineering. Some of the technologies covered boilers, turbines, pumps, engines, fuel cells etc.</div></li></ul></li></ul></li></ul></li>
-	<li class="col" id="FMID_1489090143FM"><div class="nodecontent">post-graduate</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_736465438FM"><div class="nodecontent">Psychology of Management</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1174799062FM"><div class="nodecontent">University of Warsaw</div></li>
-	<li class="basic" id="FMID_1817703395FM"><div class="nodecontent">Psychology Department</div></li>
-	<li class="basic" id="FMID_1603711609FM"><div class="nodecontent">Two-semester studies</div></li>
-	<li class="basic" id="FMID_1564649926FM"><div class="nodecontent">2013-2014</div></li>
-	<li class="exp" id="FMID_1512685952FM"><div class="nodecontent">Summary:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1844836659FM"><div class="nodecontent">Individual and social psychology followed by negotiations, motivation, recruitment and leadership theory and workshops</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1249078297FM"><div class="nodecontent">courses</div>
-		<ul class="sub">
-	<li class="col" id="FMID_1640812391FM"><div class="nodecontent">Project Management</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1911531237FM"><div class="nodecontent">IEn 2011</div></li></ul></li>
-	<li class="col" id="FMID_1574434224FM"><div class="nodecontent">Proposal Writing</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1125658723FM"><div class="nodecontent">IEn 2012</div></li></ul></li>
-	<li class="col" id="FMID_819683736FM"><div class="nodecontent">Intelectual Property Commercialization</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1707451211FM"><div class="nodecontent">IEn 2013</div></li></ul></li>
-	<li class="col" id="FMID_1935943138FM"><div class="nodecontent">Energy Efficiency Programmes</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1721430008FM"><div class="nodecontent">IEn 2011</div></li></ul></li>
-	<li class="col" id="FMID_259810364FM"><div class="nodecontent">Biomas Conversion</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_246808252FM"><div class="nodecontent">IEn/ECN 2013</div></li></ul></li>
-	<li class="col" id="FMID_996026143FM"><div class="nodecontent">Linux Administration</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1456038539FM"><div class="nodecontent">Linux Academy 2009</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_263790721FM"><div class="nodecontent">MOOCs<br />(edX, coursera)</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1141409201FM"><div class="nodecontent">Finished:</div>
-		<ul class="sub">
-	<li class="col" id="FMID_1219118370FM"><div class="nodecontent">Introduction to Computational Thinking and Data Science </div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_840557406FM"><div class="nodecontent">MITx 6.00.1x</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1863659073FM"><div class="nodecontent">This course is the first of a two-course sequence: Introduction to Computer Science and Programming Using Python, and Introduction to Computational Thinking and Data Science. Together, they are designed to help people with no prior exposure to computer science or programming learn to think computationally and write programs to tackle useful problems. Some of the people taking the two courses will use them as a stepping stone to more advanced computer science courses, but for many it will be their first and last computer science courses.</div></li></ul></li>
-	<li class="basic" id="FMID_1213839287FM"><div class="nodecontent">2013</div></li></ul></li>
-	<li class="col" id="FMID_415491065FM"><div class="nodecontent">Computer Science and Programming</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1808552496FM"><div class="nodecontent">MITx 6.00.2x</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1121301055FM"><div class="nodecontent">6.00.2x will teach you how to use computation to accomplish a variety of goals and provides you with a brief introduction to a variety of topics in computational problem solving . This course is aimed at students with some prior programming experience in Python and a rudimentary knowledge of computational complexity. You will spend a considerable amount of time writing programs to implement the concepts covered in the course. For example, you will write a program that will simulate a robot vacuum cleaning a room or will model the population dynamics of viruses replicating and drug treatments in a patient's body</div></li></ul></li>
-	<li class="basic" id="FMID_429853171FM"><div class="nodecontent">2014</div></li></ul></li>
-	<li class="col" id="FMID_217044665FM"><div class="nodecontent">Model Thinking</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1692134856FM"><div class="nodecontent">UMichigan</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1199261101FM"><div class="nodecontent">This course provided an introduction on how to think using models. Specific topics included, among others, decision-making, tipping points, economic models, crowd dynamics, Markov processes, game theory and predictive thinking.</div></li></ul></li>
-	<li class="basic" id="FMID_1113212552FM"><div class="nodecontent">2014</div></li></ul></li>
-	<li class="col" id="FMID_207403191FM"><div class="nodecontent">Global Warming Science</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1261498205FM"><div class="nodecontent">MITx 12.340x</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_540550883FM"><div class="nodecontent">12.340x introduces the basic science underpinning our knowledge of the climate system, how climate has changed in the past, and how it may change in the future. The course focuses on the fundamental energy balance in the climate system, between incoming solar radiation and outgoing infrared radiation, and how this balance is affected by greenhouse gases. We will also discuss physical processes that shape the climate, such as atmospheric and oceanic convection and large-scale circulation, solar variability, orbital mechanics, and aerosols, as well as the evidence for past and present climate change. We will discuss climate models of varying degrees of complexity, and you will be able to run a model of a single column of the Earth's atmosphere, which includes many of the important elements of simulating climate change. Together, this range of topics forms the scientific basis for our understanding of anthropogenic (human-influenced) climate change.</div></li></ul></li>
-	<li class="basic" id="FMID_1489512400FM"><div class="nodecontent">2014</div></li></ul></li>
-	<li class="col" id="FMID_1233787325FM"><div class="nodecontent">Analytics Edge</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_180312151FM"><div class="nodecontent">MITx 15.071x</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_690242147FM"><div class="nodecontent"> In this course, you will learn how to use data and analytics to give an edge to your career and your life. We will examine real world examples of how analytics have been used to significantly improve a business or industry. These examples include Moneyball, eHarmony, the Framingham Heart Study, Twitter, IBM Watson, and Netflix. Through these examples and many more, we will teach you the following analytics methods: linear regression, logistic regression, trees, text analytics, clustering, visualization, and optimization. We will be using the statistical software R to build models and work with data. The contents of this course are essentially the same as those of the corresponding MIT class (The Analytics Edge). It is a challenging class, but it will enable you to apply analytics to real-world applications. </div></li></ul></li>
-	<li class="basic" id="FMID_1826320930FM"><div class="nodecontent">2014</div></li></ul></li>
-	<li class="col" id="FMID_1470078404FM"><div class="nodecontent">Global Poverty Challenges</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_219468421FM"><div class="nodecontent">MITx 14.73x</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_420431984FM"><div class="nodecontent">This is a course for those who are interested in the challenge posed by massive and persistent world poverty, and are hopeful that economists might have something useful to say about this challenge. The questions we will take up include: Is extreme poverty a thing of the past? What is economic life like when living under a dollar per day? Are the poor always hungry? How do we make schools work for poor citizens? How do we deal with the disease burden? Is microfinance invaluable or overrated? Without property rights, is life destined to be "nasty, brutish and short"? Should we leave economic development to the market? Should we leave economic development to non-governmental organizations (NGOs)? Does foreign aid help or hinder? Where is the best place to intervene? And many others.</div></li></ul></li>
-	<li class="basic" id="FMID_1652308048FM"><div class="nodecontent">2014</div></li></ul></li>
-	<li class="col" id="FMID_281637878FM"><div class="nodecontent">Introduction to Graphene Science and Technology</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_915797059FM"><div class="nodecontent">ChalmersX ChM001x</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1933372797FM"><div class="nodecontent">Explain how to perform graphene material synthesis experiments    <br />Assess if and how graphene can be used in different electronic products to improve, enhance or add new properties     <br />Comprehend scientific articles on graphene research     <br />Identify existing and new areas of graphene application and evaluate its potential     <br />Evaluate whether or not graphene can contribute to your career advancement – be it in academia or industry  </div></li></ul></li>
-	<li class="basic" id="FMID_665177780FM"><div class="nodecontent">2015</div></li></ul></li>
-	<li class="col" id="FMID_1142572087FM"><div class="nodecontent"> Principles of Project Management </div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_362087855FM"><div class="nodecontent">Polytechnic West</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1181696910FM"><div class="nodecontent">    What a project is, and how you can manage it, including:         An overview of popular Project Management methodologies and standards         The project life cycle: Concept, Develop, Execute and Finish         Nine areas every project manager should know         The main constraints projects often encounter         The benefits of Project Management     What is involved in the concept phase, including:         Key project roles, like the project manager, team and stakeholder         Setting and justifying your goals     What is involved in the development phase, including:         The project management plan         Planning for change     How to monitor and control the execution of a project, including:         Quality auditing and continuous improvement         Getting handover right and how to use the lessons learned </div></li></ul></li>
-	<li class="basic" id="FMID_1533819060FM"><div class="nodecontent">2015</div></li></ul></li>
-	<li class="col" id="FMID_1255838655FM"><div class="nodecontent">Software Processes and Agile Practices</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1137344940FM"><div class="nodecontent">UAlberta</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_798923909FM"><div class="nodecontent">This course delves into a variety of processes to structure software development. It also covers the foundations of core Agile practices, such as Extreme Programming and Scrum.</div></li></ul></li>
-	<li class="basic" id="FMID_362883010FM"><div class="nodecontent">2015</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1018594714FM"><div class="nodecontent">Unfinished:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1387495067FM"><div class="nodecontent">Financial Programming and Policies, Part 1: Macroeconomic Accounts &amp; Analysis</div></li>
-	<li class="basic" id="FMID_1724046643FM"><div class="nodecontent">Introduction to Solid State Chemistry</div></li>
-	<li class="basic" id="FMID_408933300FM"><div class="nodecontent">Inclusive Leadership Training: Becoming a Successful Leader</div></li>
-	<li class="basic" id="FMID_1921410446FM"><div class="nodecontent">The Science of Everyday Thinking</div></li>
-	<li class="basic" id="FMID_1810528190FM"><div class="nodecontent">Framing: Creating powerful political messages</div></li>
-	<li class="basic" id="FMID_1605803895FM"><div class="nodecontent">Learn HTML5 from W3C</div></li>
-	<li class="basic" id="FMID_297818640FM"><div class="nodecontent">Introduction to Big Data with Apache Spark (BerkeleyX)</div></li>
-	<li class="basic" id="FMID_1270235095FM"><div class="nodecontent">Creative Problem Solving and Decision Making</div></li>
-	<li class="basic" id="FMID_1548773511FM"><div class="nodecontent">Machine Learning</div></li>
-	<li class="basic" id="FMID_145282350FM"><div class="nodecontent">How Green Is That Product? An Introduction to Life Cycle Environmental Assessment</div></li>
-	<li class="basic" id="FMID_126119930FM"><div class="nodecontent">High Performance Scientific Computing (UoWashington)</div></li>
-	<li class="basic" id="FMID_740115677FM"><div class="nodecontent">Introduction to Physical Chemistry</div></li>
-	<li class="basic" id="FMID_973052383FM"><div class="nodecontent">Introduction to Data Science</div></li>
-	<li class="basic" id="FMID_1888562924FM"><div class="nodecontent">Foundations of Development Policy</div></li>
-	<li class="col" id="FMID_1935928864FM"><div class="nodecontent">New Generation Infrastructures</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1525278393FM"><div class="nodecontent">DelftX NGI101x</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_900181253FM"><div class="nodecontent">Planned:</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_349263206FM"><div class="nodecontent">many more</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1553402818FM"><div class="nodecontent">Schools</div>
-		<ul class="sub">
-	<li class="col" id="FMID_1814160489FM"><div class="nodecontent">VI^th HIgh School in Warsaw</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_755024178FM"><div class="nodecontent">T. Reytan</div></li>
-	<li class="basic" id="FMID_1073492923FM"><div class="nodecontent">1999-2001</div></li>
-	<li class="basic" id="FMID_1745044675FM"><div class="nodecontent">maths-phys profile</div></li></ul></li>
-	<li class="col" id="FMID_1531860811FM"><div class="nodecontent">II^nd High School in Gdynia</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_1835356871FM"><div class="nodecontent">A. Mickiewicz</div></li>
-	<li class="basic" id="FMID_1655413815FM"><div class="nodecontent">1997-1999</div></li>
-	<li class="basic" id="FMID_994550681FM"><div class="nodecontent">maths-phys profile</div></li></ul></li>
-	<li class="col" id="FMID_1688380674FM"><div class="nodecontent">43^rd Primary School in Gdynia</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_642771542FM"><div class="nodecontent">1988-1997</div></li></ul></li></ul></li></ul></li>
-	<li class="col" style="background-color:#ffff99;" id="FMID_1686734184FM"><div class="nodecontent">Skills</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1081452129FM"><div class="nodecontent">Languages</div>
-		<ul class="sub">
-	<li class="col" id="FMID_920918322FM"><div class="nodecontent">Polish</div>
-		<ul class="subexp">
-	<li class="basic" id="FMID_619896538FM"><div class="nodecontent">native speaker</div></li></ul></li>
-	<li class="col" id="FMID_946424890FM"><div class="nodecontent">English</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1243395395FM"><div class="nodecontent">fluent</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_96445469FM"><div class="nodecontent">fluent level for an engineer. Sufficient for discusing and writing technical documents</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_627450006FM"><div class="nodecontent">German</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1487552228FM"><div class="nodecontent">intermediate</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1066514421FM"><div class="nodecontent">learned for many (~10) years, unfortunately rarely used</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_752638299FM"><div class="nodecontent">Spanish</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_946494112FM"><div class="nodecontent">basic</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1290850109FM"><div class="nodecontent">learned 3 years, not used, mostly passive understanding at the moment, but with a potential for quick refreshment</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_723858371FM"><div class="nodecontent">Dutch</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1505254489FM"><div class="nodecontent">&lt;basic</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_496918115FM"><div class="nodecontent">never exactly learned, but practiced during 3 months stay in the Netherlands</div></li></ul></li></ul></li>
-	<li class="col" id="FMID_1764171019FM"><div class="nodecontent">Russian</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_719932996FM"><div class="nodecontent">&lt;basic</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_402804112FM"><div class="nodecontent">never learned but I do have Russian members of family and I found to be communicative while traveling through eastern Europe</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1578634592FM"><div class="nodecontent">Computers</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1707013857FM"><div class="nodecontent">Programming</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_844105647FM"><div class="nodecontent">Python</div></li>
-	<li class="basic" id="FMID_169200090FM"><div class="nodecontent">R</div></li>
-	<li class="basic" id="FMID_1956920434FM"><div class="nodecontent">MATLAB</div></li>
-	<li class="basic" id="FMID_900654269FM"><div class="nodecontent">FORTRAN 77/90</div></li>
-	<li class="basic" id="FMID_925978302FM"><div class="nodecontent">modelica</div></li>
-	<li class="basic" id="FMID_1516818284FM"><div class="nodecontent">C++</div></li>
-	<li class="basic" id="FMID_775461806FM"><div class="nodecontent">bash</div></li></ul></li>
-	<li class="col" id="FMID_357786455FM"><div class="nodecontent">Usage</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_1397122887FM"><div class="nodecontent">Office</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1601793405FM"><div class="nodecontent">MS Office</div></li>
-	<li class="exp" id="FMID_1502139035FM"><div class="nodecontent">LibreOffice</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1680628235FM"><div class="nodecontent">OpenOffice and other forks alsoalso</div></li></ul></li>
-	<li class="basic" id="FMID_1205632692FM"><div class="nodecontent">gnumeric</div></li>
-	<li class="basic" id="FMID_917915777FM"><div class="nodecontent">Thunderbird</div></li>
-	<li class="exp" id="FMID_801257242FM"><div class="nodecontent">Graphics</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1573938656FM"><div class="nodecontent">raster</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_414041848FM"><div class="nodecontent">GIMP</div></li></ul></li>
-	<li class="exp" id="FMID_776318341FM"><div class="nodecontent">vector</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_409048463FM"><div class="nodecontent">Inkscape</div></li>
-	<li class="basic" id="FMID_618378043FM"><div class="nodecontent">dia</div></li>
-	<li class="basic" id="FMID_681010306FM"><div class="nodecontent">libreoffice Draw</div></li></ul></li>
-	<li class="exp" id="FMID_1981127975FM"><div class="nodecontent">CAD</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_427025981FM"><div class="nodecontent">LibreCAD</div></li>
-	<li class="basic" id="FMID_620427938FM"><div class="nodecontent">AutoCAD</div></li>
-	<li class="basic" id="FMID_1614147170FM"><div class="nodecontent">SALOME</div></li>
-	<li class="basic" id="FMID_1993337233FM"><div class="nodecontent">Blender</div></li></ul></li>
-	<li class="exp" id="FMID_768149214FM"><div class="nodecontent">publishing</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_278036726FM"><div class="nodecontent">Scribus</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1507597639FM"><div class="nodecontent">Modelling frameworks/environments</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_976730293FM"><div class="nodecontent">ANSYS FLUENT</div></li>
-	<li class="basic" id="FMID_808693913FM"><div class="nodecontent">Aspen Plus</div></li>
-	<li class="basic" id="FMID_1023679897FM"><div class="nodecontent">HYSYS</div></li>
-	<li class="basic" id="FMID_335300585FM"><div class="nodecontent">MATLAB</div></li>
-	<li class="basic" id="FMID_1662130421FM"><div class="nodecontent">Octave</div></li>
-	<li class="basic" id="FMID_922795718FM"><div class="nodecontent">DWSim</div></li>
-	<li class="basic" id="FMID_1312148650FM"><div class="nodecontent">OMEdit</div></li>
-	<li class="basic" id="FMID_1334010241FM"><div class="nodecontent">NetLogo</div></li></ul></li>
-	<li class="exp" id="FMID_982326965FM"><div class="nodecontent">Version control</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_143819547FM"><div class="nodecontent">git</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1208998012FM"><div class="nodecontent">Administration</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_593003781FM"><div class="nodecontent">Linux Admin</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1046588422FM"><div class="nodecontent">2008</div></li>
-	<li class="basic" id="FMID_1555230746FM"><div class="nodecontent">probably mostly outdated</div></li>
-	<li class="exp" id="FMID_1367712942FM"><div class="nodecontent">but GNU/Linux still is my OS of choice</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_726962398FM"><div class="nodecontent">If asked I recommend Manjaro Linux</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1923208490FM"><div class="nodecontent">Windows</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_50087857FM"><div class="nodecontent">not ever a real admin but I helped a lot with Windows administration <br />before my employer did not have a proper proffesional support for IT</div></li>
-	<li class="basic" id="FMID_799983906FM"><div class="nodecontent">mostly outdated as it have been the times of Widows XP</div></li></ul></li></ul></li></ul></li>
-	<li class="exp" id="FMID_1127076436FM"><div class="nodecontent">Driving</div>
-		<ul class="sub">
-	<li class="exp" id="FMID_1123102171FM"><div class="nodecontent">cars and vans (up to 3,5 t)</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_25724101FM"><div class="nodecontent">polish category B driving licence</div></li></ul></li>
-	<li class="exp" id="FMID_113453796FM"><div class="nodecontent">sailing yachts</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1498835791FM"><div class="nodecontent">up to 25 m2 of sail</div></li>
-	<li class="basic" id="FMID_1965805349FM"><div class="nodecontent">inland waters and few miles from the shore</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_383807587FM"><div class="nodecontent">Music</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1854317296FM"><div class="nodecontent">drums</div></li>
-	<li class="basic" id="FMID_379316162FM"><div class="nodecontent">guitar</div></li></ul></li></ul></li>
-	<li class="col" style="background-color:#ff9999;" id="FMID_598381028FM"><div class="nodecontent">Events</div>
-		<ul class="subexp">
-	<li class="exp" id="FMID_469710220FM"><div class="nodecontent">DataCarpentry 2015</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_186998475FM"><div class="nodecontent">secondary instructor at Data Carpentry workshops for Cambridge University phd students and post-docs</div></li>
-	<li class="basic" id="FMID_1792371936FM"><div class="nodecontent"><a href="https://lgatto.github.io/2015-09-10-CAM/">workshop website</a> <a href="https://lgatto.github.io/2015-09-10-CAM/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
-	<li class="basic" id="FMID_419665574FM"><div class="nodecontent"><a href="http://www.datacarpentry.org/">DataCarpentry</a> <a href="http://www.datacarpentry.org/"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
-	<li class="exp" id="FMID_1067512755FM"><div class="nodecontent">ESGI 2014</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1971958410FM"><div class="nodecontent">European Study Group for Industry participant</div></li>
-	<li class="basic" id="FMID_1326055945FM"><div class="nodecontent">Copenhagen, DTU (Danish University of Technology)</div></li>
-	<li class="basic" id="FMID_1978987519FM"><div class="nodecontent">5 days workshop developing adjusting auto-adjusting ruck rear mirrors for spotting bikes on turns</div></li>
-	<li class="basic" id="FMID_1920577746FM"><div class="nodecontent"><a href="http://www.compute.dtu.dk/english/cooperation/ESGI">DTU ESGI website</a> <a href="http://www.compute.dtu.dk/english/cooperation/ESGI"><img src="STRG_extendedCV.html_files//ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
-	<li class="exp" id="FMID_1947209972FM"><div class="nodecontent">LPB14</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_691925554FM"><div class="nodecontent">X Letnie Praktyki Badawcze 2014</div></li>
-	<li class="exp" id="FMID_508901320FM"><div class="nodecontent">10th Summer Research Internship 2014</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_16341995FM"><div class="nodecontent">Two months bootcamp for MSc and PhD students</div></li>
-	<li class="basic" id="FMID_242565181FM"><div class="nodecontent">Organized by CIAMSE which is part of Polish Academy of Sciences</div></li></ul></li>
-	<li class="exp" id="FMID_803088258FM"><div class="nodecontent">Leading one of the projects</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1851751889FM"><div class="nodecontent">SMAUG</div></li>
-	<li class="basic" id="FMID_1838897640FM"><div class="nodecontent">data analysis in banking sector</div></li></ul></li>
-	<li class="exp" id="FMID_1345934453FM"><div class="nodecontent">Co-leading one of the prjects</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_437787721FM"><div class="nodecontent">KANT</div></li>
-	<li class="basic" id="FMID_210451784FM"><div class="nodecontent">technology niches indentification</div></li></ul></li></ul></li>
-	<li class="exp" id="FMID_773753392FM"><div class="nodecontent">Strategy Planning 2012-2013</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_309699255FM"><div class="nodecontent">I participated in series of workshops that developed strategy for the department I was working in</div></li>
-	<li class="basic" id="FMID_528726123FM"><div class="nodecontent">Workshop organizer: InnoCo</div></li></ul></li>
-	<li class="exp" id="FMID_551484731FM"><div class="nodecontent">WinterSchool 2012</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_335083517FM"><div class="nodecontent">Leading participant</div></li>
-	<li class="basic" id="FMID_1354601754FM"><div class="nodecontent">Warsaw, Polish Academy of Sciences</div></li>
-	<li class="basic" id="FMID_1748915376FM"><div class="nodecontent">5 days workshop developing model of glicol dehumidification with microwaves</div></li></ul></li>
-	<li class="exp" id="FMID_499609124FM"><div class="nodecontent">SENERES Biomass 2012</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1662047234FM"><div class="nodecontent">2 days workshops on biomass energy challenges</div></li>
-	<li class="basic" id="FMID_283239681FM"><div class="nodecontent">Workshop made by experinces researchers from ECN at Institute of Power Engineering, Warsaw</div></li></ul></li>
-	<li class="exp" id="FMID_1886688970FM"><div class="nodecontent">International Conference on Boiler Technology 2010</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1778617392FM"><div class="nodecontent">Presentation co-author</div></li>
-	<li class="basic" id="FMID_59933973FM"><div class="nodecontent">Oxy-combustion retrofit of an exisitng coal fired boiler</div></li>
-	<li class="basic" id="FMID_992048765FM"><div class="nodecontent">Technical conference, Szczyrk</div></li></ul></li>
-	<li class="exp" id="FMID_1081375376FM"><div class="nodecontent">Book chapter Published 2010</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_731075816FM"><div class="nodecontent">Co-author of chapter in oxy-combustion and CCS book  (in Polish):  "New technologies for combustion and flue gas purification"</div></li>
-	<li class="basic" id="FMID_1485144900FM"><div class="nodecontent">Title In polish: "Nowe technologie spalania i oczyszczania spalin"</div></li>
-	<li class="basic" id="FMID_1640012379FM"><div class="nodecontent">Main editors: Wojciech Nowak, Marek Pronobis</div></li></ul></li>
-	<li class="exp" id="FMID_98594821FM"><div class="nodecontent">Ecoenergy Network 2008</div>
-		<ul class="sub">
-	<li class="basic" id="FMID_1733646525FM"><div class="nodecontent">Presentation</div></li>
-	<li class="basic" id="FMID_1064189565FM"><div class="nodecontent">Example agroenergy thermodynamic cycles</div></li>
+    </p>
+  <ul>
+<li><div style="background-color:#ffcc99;padding: 0.5em;">
+Employment history<ul>
+<li>Anthesis<ul>
+<li>2022 - now</li><li>Senior Analyst</li><li>remote / London / Bristol</li><li><a href="https://www.anthesisgroup.com/energy-services/" target="_blank">link</a>
+</li><li>summary<ul>
+<li>Overseeing analytical work on techno-economic analysis, energy modeling, data processing and net-zero advice.</li></ul>
+</li></ul>
+</li><li>Siemens<ul>
+<li>2021 - 2022</li><li>Senior Consultant</li><li>remote / Manchester</li><li><a href="https://new.siemens.com/global/en/products/energy/energy-automation-and-smart-grid/energy-business-advisory.html" target="_blank">link</a>
+</li><li>summary<ul>
+<li>Net-zero and smart campus/city consulting.</li></ul>
+</li></ul>
+</li><li>ICF<ul>
+<li>2018 - 2021</li><li>Senior Consultant</li><li>London</li><li><a href="https://www.icf.com/company/locations/european-region" target="_blank">link</a>
+</li><li>summary<ul>
+<li>Policy research and advise. Technical reviews of technologies and market assessments. Data anaysis and report writing in techno-economic evaluations of investments Technical assistance for countries and European Commission;</li></ul>
+</li><li><span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> <span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+about the organization<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>ICF is a consulting copmany, headquartered in Fairfax, Va, US. It employs over 7 000 people advising in infrastracture related areas like: buildings, trasnport and energy. </li></ul>
+</li><li><span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> <span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+my role<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>As a Consultant I have contacted clients at all levels while leading process of writing technical reports and conducting needed research. My clients include BEIS, European Commission, national agencies. My areas of expertise were focused on, but not limited to: boiler techonologies, heat pumps, ORC modules, CCUS, industrial heat recovery and power generation.</li></ul>
+</li></ul>
+</li><li>Ramboll<ul>
+<li>2016-2018</li><li>Consultant</li><li>Warsaw / Copenhagen / Newcastle, PL/DK/UK</li><li><a href="http://www.ramboll.com/services-and-sectors/energy" target="_blank">link</a>
+</li><li>summary<ul>
+<li>Data anaysis and report writing in techno-economic evaluations of investments and maintenance programmes; energy technology advisory; feasibility studies; due dilligence; tenders technical assesment;</li></ul>
+</li><li><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> <span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+about organization<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>Ramboll is engineering and consulting copmany, headquartered in Copnehagen, DK. It employs over 14 000 people advising in infrastracture related areas like: buildings, trasnport and energy. Ramboll aims at bringing scandinavian standard and quality of living, as well as values to the world.</li></ul>
+</li><li><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> <span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+my role<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>As a Consultant I have contacted clients at all levels while leading process of writing technical reports and conducting needed research. My clients included power utilities, industrial plants and factories. My areas of expertise were focused on, but not limited to: boiler techonologies, flue gas cleaning, gasifier systems, ORC modules, maintenance programme analysis and forecasts, risk identification and assessment.</li></ul>
+</li></ul>
+</li><li><span id="show1_5" class="foldclosed" onClick="show_folder('1_5')" style="POSITION: absolute">+</span> <span id="hide1_5" class="foldopened" onClick="hide_folder('1_5')">-</span>
+Centre for Industrial Applications of Mathematics &#10;and Systems Engineering, &#10;Polish Academy of Sciences (CIAMSE PAS)<ul id="fold1_5" style="POSITION: relative; VISIBILITY: visible;">
+<li>2014-2015</li><li>Senior Researcher</li><li>Warsaw / Cambridge, PL/UK</li><li><a href="http://maths.com.pl/?q=english" target="_blank">link</a>
+</li><li><span id="show1_5_1" class="foldclosed" onClick="show_folder('1_5_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1" class="foldopened" onClick="hide_folder('1_5_1')">-</span>
+summary:<ul id="fold1_5_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Technical consulting; research in systems modelling; machine learning data semantics; project management and coordination; leader of projects focused on disruptive technologies.</li></ul>
+</li><li><span id="show1_5_2" class="foldclosed" onClick="show_folder('1_5_2')" style="POSITION: absolute">+</span> <span id="hide1_5_2" class="foldopened" onClick="hide_folder('1_5_2')">-</span>
+about organization:<ul id="fold1_5_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>the Centre is a joint initiative of two institutes of Polish Academy of Sciences: Systems Research Institute and Institute of Mathematics. Created by dr Kamil Kulesza after his Cambridge postdoc and based on idea of ESGI (European Study Groups for Industry) - diverse groups of mathematical minds tackling real industry problems. Centre works with industry, performing research projects for various companies from all sectors of economy.</li></ul>
+</li><li><span id="show1_5_3" class="foldclosed" onClick="show_folder('1_5_3')" style="POSITION: absolute">+</span> <span id="hide1_5_3" class="foldopened" onClick="hide_folder('1_5_3')">-</span>
+my role:<ul id="fold1_5_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>As a Senior Researcher I have led projects in areas of technology. I managed technology development monitoring and technology niches discovery process. I co-organized summer data science workshops (a part of financial data mining). I have participated in creation of semantic knowledge representation systems (taxonomies, ontologies).</li></ul>
+</li></ul>
+</li><li><span id="show1_6" class="foldclosed" onClick="show_folder('1_6')" style="POSITION: absolute">+</span> <span id="hide1_6" class="foldopened" onClick="hide_folder('1_6')">-</span>
+Energy Center of the Netherlands (ECN)<ul id="fold1_6" style="POSITION: relative; VISIBILITY: visible;">
+<li>April-August 2013</li><li>Visiting Researcher</li><li>Petten / Alkmaar, NL</li><li><a href="https://www.ecn.nl/" target="_blank">link</a>
+</li><li><span id="show1_6_1" class="foldclosed" onClick="show_folder('1_6_1')" style="POSITION: absolute">+</span> <span id="hide1_6_1" class="foldopened" onClick="hide_folder('1_6_1')">-</span>
+summary<ul id="fold1_6_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Techno-economic evaluation of existing  power plant modernization to bioenergy production and  negative CO2 emission.</li></ul>
+</li><li><span id="show1_6_2" class="foldclosed" onClick="show_folder('1_6_2')" style="POSITION: absolute">+</span> <span id="hide1_6_2" class="foldopened" onClick="hide_folder('1_6_2')">-</span>
+about organization:<ul id="fold1_6_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>Biomass Department of ECN foceses on research and development of sustainable biomass conversion for heat and electricity production. Main topics of interest for the deparment are: gasification, syngas cleaning, torrefaction, biochemistry.</li></ul>
+</li><li><span id="show1_6_3" class="foldclosed" onClick="show_folder('1_6_3')" style="POSITION: absolute">+</span> <span id="hide1_6_3" class="foldopened" onClick="hide_folder('1_6_3')">-</span>
+my role:<ul id="fold1_6_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>As a visiting Researcher my main task was to deliver objectives of one of CATO2 project tasks, that  was techno-economic analysis of biomass co-firing power plant combined with CCS (Carbon Capture and Storage).</li></ul>
+</li></ul>
+</li><li><span id="show1_7" class="foldclosed" onClick="show_folder('1_7')" style="POSITION: absolute">+</span> <span id="hide1_7" class="foldopened" onClick="hide_folder('1_7')">-</span>
+Institute of Power Engineering (IEn)<ul id="fold1_7" style="POSITION: relative; VISIBILITY: visible;">
+<li>2007-2014</li><li>Thermal Processes Department</li><li>Engineer</li><li>Warsaw, PL</li><li><a href="https://ien.com.pl/cpc-thermal-processing-department" target="_blank">link</a>
+</li><li><span id="show1_7_1" class="foldclosed" onClick="show_folder('1_7_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1" class="foldopened" onClick="hide_folder('1_7_1')">-</span>
+summary<ul id="fold1_7_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Mathematical modelling of energy systems, industry consulting and techno-economic analysis;  project management and coordination; research and experimental work on NOx emissions and its mitigation (SCR and SNCR) and oxy-combustion with CCS, μCHP research (fuel cells, ORC, Stirling engines).</li></ul>
+</li><li><span id="show1_7_2" class="foldclosed" onClick="show_folder('1_7_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2" class="foldopened" onClick="hide_folder('1_7_2')">-</span>
+about organization:<ul id="fold1_7_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>Thermal Processes Department is fast growing unit that grows from experience with mills and burners in coal power plants expertise. The scope had broadened in XXI century and included gasification and solid oxide fuel cells, biomass conversion, flue gas treatment. Formally three teams have been formed: combustion, gasification, fuel cells.</li></ul>
+</li><li><span id="show1_7_3" class="foldclosed" onClick="show_folder('1_7_3')" style="POSITION: absolute">+</span> <span id="hide1_7_3" class="foldopened" onClick="hide_folder('1_7_3')">-</span>
+my role:<ul id="fold1_7_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>I have been recruited as an engineer for fuel cells systems development (auxiliaries, heat exchange optimization). Due to slow development of core fuel cell technology I started to take part in many consulting projects for power plants, including fuel gas treatment, fuel flexibility. Because of intense commitment to those consulting tasks I have been formally assigned to Combustion Team, but I have been an interconnector between the teams and a person dealing with subjects not being the core competence of the department. One of the most important projects was starting development of new line of interest in the department: biomass fired mini CHP (Combined Heat and Power).</li></ul>
+</li></ul>
+</li><li><span id="show1_8" class="foldclosed" onClick="show_folder('1_8')" style="POSITION: absolute">+</span> <span id="hide1_8" class="foldopened" onClick="hide_folder('1_8')">-</span>
+Polska Ekologia (poleko)<ul id="fold1_8" style="POSITION: relative; VISIBILITY: visible;">
+<li>2006-2007</li><li>solar energy  & heat pumps</li><li>Technical Adviser</li><li><a href="http://poleko.pl/" target="_blank">link</a>
+</li><li><span id="show1_8_1" class="foldclosed" onClick="show_folder('1_8_1')" style="POSITION: absolute">+</span> <span id="hide1_8_1" class="foldopened" onClick="hide_folder('1_8_1')">-</span>
+summary<ul id="fold1_8_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Consulting individual and industry clients; design of large solar heating plants; giving solar energy lectures to heating system installers.</li></ul>
+</li><li><span id="show1_8_2" class="foldclosed" onClick="show_folder('1_8_2')" style="POSITION: absolute">+</span> <span id="hide1_8_2" class="foldopened" onClick="hide_folder('1_8_2')">-</span>
+about organization:<ul id="fold1_8_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>Polska Ekologia was a small company founded by author of the first polish book about solar energy Miroslaw Zawadzki. It was a main distributor of Sunex solar collectors in Poland (Sunex mostly designed and produced collectors for western Europe under other brands). Company organised weekly one-day courses about solar energy for installers and designers.</li></ul>
+</li><li><span id="show1_8_3" class="foldclosed" onClick="show_folder('1_8_3')" style="POSITION: absolute">+</span> <span id="hide1_8_3" class="foldopened" onClick="hide_folder('1_8_3')">-</span>
+my role:<ul id="fold1_8_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>As a Technical Adviser I have helped to design solar (and heat pump) systems. I have been the whole technical department in company so I gave lectures, wrote technical documentation, made costs calculations and investment return assessment.</li></ul>
+</li></ul>
+</li><li><span id="show1_9" class="foldclosed" onClick="show_folder('1_9')" style="POSITION: absolute">+</span> <span id="hide1_9" class="foldopened" onClick="hide_folder('1_9')">-</span>
+other experiences<ul id="fold1_9" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_9_1" class="foldclosed" onClick="show_folder('1_9_1')" style="POSITION: absolute">+</span> <span id="hide1_9_1" class="foldopened" onClick="hide_folder('1_9_1')">-</span>
+Transition Technologies (TT)<ul id="fold1_9_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>2006-2007</li><li>artificial inteligence and control systems</li><li><span id="show1_9_1_1" class="foldclosed" onClick="show_folder('1_9_1_1')" style="POSITION: absolute">+</span> <span id="hide1_9_1_1" class="foldopened" onClick="hide_folder('1_9_1_1')">-</span>
+internship and MSc thesis<ul id="fold1_9_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>"Selforganising Kohenen neural networks usability &#10;in energy market transactions evaluations"</li></ul>
+</li><li><a href="http://tt.com.pl/en/" target="_blank">link</a>
+</li></ul>
+</li><li><span id="show1_9_2" class="foldclosed" onClick="show_folder('1_9_2')" style="POSITION: absolute">+</span> <span id="hide1_9_2" class="foldopened" onClick="hide_folder('1_9_2')">-</span>
+Amnesty International<ul id="fold1_9_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>2006</li><li>human rights NGO</li><li>fundraising</li><li><a href="http://amnesty.org.pl/" target="_blank">link</a>
+</li></ul>
+</li><li><span id="show1_9_3" class="foldclosed" onClick="show_folder('1_9_3')" style="POSITION: absolute">+</span> <span id="hide1_9_3" class="foldopened" onClick="hide_folder('1_9_3')">-</span>
+Zielone Mazowsze<ul id="fold1_9_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>2005 -2007</li><li>local, Warsaw green watchdog</li><li>public transport evaluation projects</li><li><a href="http://www.zm.org.pl/" target="_blank">link</a>
+</li></ul>
+</li><li><span id="show1_9_4" class="foldclosed" onClick="show_folder('1_9_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4" class="foldopened" onClick="hide_folder('1_9_4')">-</span>
+Zielone Wiadomości<ul id="fold1_9_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>2013-2015</li><li>translating articles from english to polish</li><li>topics surrounding climate and finance</li></ul>
+</li><li><span id="show1_9_5" class="foldclosed" onClick="show_folder('1_9_5')" style="POSITION: absolute">+</span> <span id="hide1_9_5" class="foldopened" onClick="hide_folder('1_9_5')">-</span>
+other minor volunteering<ul id="fold1_9_5" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_9_5_1" class="foldclosed" onClick="show_folder('1_9_5_1')" style="POSITION: absolute">+</span> <span id="hide1_9_5_1" class="foldopened" onClick="hide_folder('1_9_5_1')">-</span>
+AUR package maintainer<ul id="fold1_9_5_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Arch User Repository</li><li>Arch Linux</li><li>2013-now</li><li><a href="https://aur4.archlinux.org/packages/firefox-aurora-pl" target="_blank">package link</a>
+</li></ul>
+</li><li><span id="show1_9_5_2" class="foldclosed" onClick="show_folder('1_9_5_2')" style="POSITION: absolute">+</span> <span id="hide1_9_5_2" class="foldopened" onClick="hide_folder('1_9_5_2')">-</span>
+Wikipedia editor<ul id="fold1_9_5_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>2003-now</li><li>1000+ edits</li><li><a href="https://pl.wikipedia.org/w/index.php?title=Specjalna:Wk%C5%82ad/Strug&dir=prev&offset=20040203224739&limit=500&target=Strug" target="_blank">mostly polish wikipedia</a>
+</li><li><a href="https://en.wikipedia.org/w/index.php?limit=50&tagfilter=&title=Special%3AContributions&contribs=user&target=Strug" target="_blank">english is still lean</a>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_9_6" class="foldclosed" onClick="show_folder('1_9_6')" style="POSITION: absolute">+</span> <span id="hide1_9_6" class="foldopened" onClick="hide_folder('1_9_6')">-</span>
+Software Carpentry<ul id="fold1_9_6" style="POSITION: relative; VISIBILITY: visible;">
+<li>secondary instructor at Data Carpentry workshops</li></ul>
+</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#ff99ff;padding: 0.5em;">
+Education<ul>
+<li>BEng<ul>
+<li><span id="show1_10" class="foldclosed" onClick="show_folder('1_10')" style="POSITION: absolute">+</span> <span id="hide1_10" class="foldopened" onClick="hide_folder('1_10')">-</span>
+Mechanical Engineering / Renewable Energy Technologies<ul id="fold1_10" style="POSITION: relative; VISIBILITY: visible;">
+<li>Warsaw University of Technology;</li><li>Power and Aeronautical Engineering Faculty</li><li>2001-2005</li><li><span id="show1_10_1" class="foldclosed" onClick="show_folder('1_10_1')" style="POSITION: absolute">+</span> <span id="hide1_10_1" class="foldopened" onClick="hide_folder('1_10_1')">-</span>
+Summary<ul id="fold1_10_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Mechanical (classical, solid state, fluid and thermodynamic) and electrical focused courses with atmosphere and sun physics and hydrology basics followed by technology projects including solar and wind but also nuclear technology.</li></ul>
+</li></ul>
+</li></ul>
+</li><li>MSc<ul>
+<li><span id="show1_11" class="foldclosed" onClick="show_folder('1_11')" style="POSITION: absolute">+</span> <span id="hide1_11" class="foldopened" onClick="hide_folder('1_11')">-</span>
+Environmental  Engineering / Environmental Problems of Thermal Power Plants<ul id="fold1_11" style="POSITION: relative; VISIBILITY: visible;">
+<li>Warsaw University of Technology;</li><li>Power and Aeronautical Engineering Faculty</li><li>2005-2007</li><li><span id="show1_11_1" class="foldclosed" onClick="show_folder('1_11_1')" style="POSITION: absolute">+</span> <span id="hide1_11_1" class="foldopened" onClick="hide_folder('1_11_1')">-</span>
+Summary:<ul id="fold1_11_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Chemistry and thermodynamics focused courses with special insight to fuel characterization, energy policies, systems engineering. Some of the technologies covered boilers, turbines, pumps, engines, fuel cells etc.</li></ul>
+</li></ul>
+</li></ul>
+</li><li>post-graduate<ul>
+<li><span id="show1_12" class="foldclosed" onClick="show_folder('1_12')" style="POSITION: absolute">+</span> <span id="hide1_12" class="foldopened" onClick="hide_folder('1_12')">-</span>
+Psychology of Management<ul id="fold1_12" style="POSITION: relative; VISIBILITY: visible;">
+<li>University of Warsaw</li><li>Psychology Department</li><li>Two-semester studies</li><li>2013-2014</li><li><span id="show1_12_1" class="foldclosed" onClick="show_folder('1_12_1')" style="POSITION: absolute">+</span> <span id="hide1_12_1" class="foldopened" onClick="hide_folder('1_12_1')">-</span>
+Summary:<ul id="fold1_12_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Individual and social psychology followed by negotiations, motivation, recruitment and leadership theory and workshops</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_13" class="foldclosed" onClick="show_folder('1_13')" style="POSITION: absolute">+</span> <span id="hide1_13" class="foldopened" onClick="hide_folder('1_13')">-</span>
+courses<ul id="fold1_13" style="POSITION: relative; VISIBILITY: visible;">
+<li>Project Management<ul>
+<li>IEn 2011</li></ul>
+</li><li>Proposal Writing<ul>
+<li>IEn 2012</li></ul>
+</li><li>Intelectual Property Commercialization<ul>
+<li>IEn 2013</li></ul>
+</li><li>Energy Efficiency Programmes<ul>
+<li>IEn 2011</li></ul>
+</li><li>Biomas Conversion<ul>
+<li>IEn/ECN 2013</li></ul>
+</li><li>Linux Administration<ul>
+<li>Linux Academy 2009</li></ul>
+</li></ul>
+</li><li><span id="show1_14" class="foldclosed" onClick="show_folder('1_14')" style="POSITION: absolute">+</span> <span id="hide1_14" class="foldopened" onClick="hide_folder('1_14')">-</span>
+MOOCs&#10;(edX, coursera)<ul id="fold1_14" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_14_1" class="foldclosed" onClick="show_folder('1_14_1')" style="POSITION: absolute">+</span> <span id="hide1_14_1" class="foldopened" onClick="hide_folder('1_14_1')">-</span>
+Finished:<ul id="fold1_14_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Introduction to Computational Thinking and Data Science <ul>
+<li><span id="show1_14_1_1" class="foldclosed" onClick="show_folder('1_14_1_1')" style="POSITION: absolute">+</span> <span id="hide1_14_1_1" class="foldopened" onClick="hide_folder('1_14_1_1')">-</span>
+MITx 6.00.1x<ul id="fold1_14_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>This course is the first of a two-course sequence: Introduction to Computer Science and Programming Using Python, and Introduction to Computational Thinking and Data Science. Together, they are designed to help people with no prior exposure to computer science or programming learn to think computationally and write programs to tackle useful problems. Some of the people taking the two courses will use them as a stepping stone to more advanced computer science courses, but for many it will be their first and last computer science courses.</li></ul>
+</li><li>2013</li></ul>
+</li><li>Computer Science and Programming<ul>
+<li><span id="show1_14_1_2" class="foldclosed" onClick="show_folder('1_14_1_2')" style="POSITION: absolute">+</span> <span id="hide1_14_1_2" class="foldopened" onClick="hide_folder('1_14_1_2')">-</span>
+MITx 6.00.2x<ul id="fold1_14_1_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>6.00.2x will teach you how to use computation to accomplish a variety of goals and provides you with a brief introduction to a variety of topics in computational problem solving . This course is aimed at students with some prior programming experience in Python and a rudimentary knowledge of computational complexity. You will spend a considerable amount of time writing programs to implement the concepts covered in the course. For example, you will write a program that will simulate a robot vacuum cleaning a room or will model the population dynamics of viruses replicating and drug treatments in a patient's body</li></ul>
+</li><li>2014</li></ul>
+</li><li>Model Thinking<ul>
+<li><span id="show1_14_1_3" class="foldclosed" onClick="show_folder('1_14_1_3')" style="POSITION: absolute">+</span> <span id="hide1_14_1_3" class="foldopened" onClick="hide_folder('1_14_1_3')">-</span>
+UMichigan<ul id="fold1_14_1_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>This course provided an introduction on how to think using models. Specific topics included, among others, decision-making, tipping points, economic models, crowd dynamics, Markov processes, game theory and predictive thinking.</li></ul>
+</li><li>2014</li></ul>
+</li><li>Global Warming Science<ul>
+<li><span id="show1_14_1_4" class="foldclosed" onClick="show_folder('1_14_1_4')" style="POSITION: absolute">+</span> <span id="hide1_14_1_4" class="foldopened" onClick="hide_folder('1_14_1_4')">-</span>
+MITx 12.340x<ul id="fold1_14_1_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>12.340x introduces the basic science underpinning our knowledge of the climate system, how climate has changed in the past, and how it may change in the future. The course focuses on the fundamental energy balance in the climate system, between incoming solar radiation and outgoing infrared radiation, and how this balance is affected by greenhouse gases. We will also discuss physical processes that shape the climate, such as atmospheric and oceanic convection and large-scale circulation, solar variability, orbital mechanics, and aerosols, as well as the evidence for past and present climate change. We will discuss climate models of varying degrees of complexity, and you will be able to run a model of a single column of the Earth's atmosphere, which includes many of the important elements of simulating climate change. Together, this range of topics forms the scientific basis for our understanding of anthropogenic (human-influenced) climate change.</li></ul>
+</li><li>2014</li></ul>
+</li><li>Analytics Edge<ul>
+<li><span id="show1_14_1_5" class="foldclosed" onClick="show_folder('1_14_1_5')" style="POSITION: absolute">+</span> <span id="hide1_14_1_5" class="foldopened" onClick="hide_folder('1_14_1_5')">-</span>
+MITx 15.071x<ul id="fold1_14_1_5" style="POSITION: relative; VISIBILITY: visible;">
+<li> In this course, you will learn how to use data and analytics to give an edge to your career and your life. We will examine real world examples of how analytics have been used to significantly improve a business or industry. These examples include Moneyball, eHarmony, the Framingham Heart Study, Twitter, IBM Watson, and Netflix. Through these examples and many more, we will teach you the following analytics methods: linear regression, logistic regression, trees, text analytics, clustering, visualization, and optimization. We will be using the statistical software R to build models and work with data. The contents of this course are essentially the same as those of the corresponding MIT class (The Analytics Edge). It is a challenging class, but it will enable you to apply analytics to real-world applications. </li></ul>
+</li><li>2014</li></ul>
+</li><li>Global Poverty Challenges<ul>
+<li><span id="show1_14_1_6" class="foldclosed" onClick="show_folder('1_14_1_6')" style="POSITION: absolute">+</span> <span id="hide1_14_1_6" class="foldopened" onClick="hide_folder('1_14_1_6')">-</span>
+MITx 14.73x<ul id="fold1_14_1_6" style="POSITION: relative; VISIBILITY: visible;">
+<li>This is a course for those who are interested in the challenge posed by massive and persistent world poverty, and are hopeful that economists might have something useful to say about this challenge. The questions we will take up include: Is extreme poverty a thing of the past? What is economic life like when living under a dollar per day? Are the poor always hungry? How do we make schools work for poor citizens? How do we deal with the disease burden? Is microfinance invaluable or overrated? Without property rights, is life destined to be "nasty, brutish and short"? Should we leave economic development to the market? Should we leave economic development to non-governmental organizations (NGOs)? Does foreign aid help or hinder? Where is the best place to intervene? And many others.</li></ul>
+</li><li>2014</li></ul>
+</li><li>Introduction to Graphene Science and Technology<ul>
+<li><span id="show1_14_1_7" class="foldclosed" onClick="show_folder('1_14_1_7')" style="POSITION: absolute">+</span> <span id="hide1_14_1_7" class="foldopened" onClick="hide_folder('1_14_1_7')">-</span>
+ChalmersX ChM001x<ul id="fold1_14_1_7" style="POSITION: relative; VISIBILITY: visible;">
+<li>Explain how to perform graphene material synthesis experiments    &#10;Assess if and how graphene can be used in different electronic products to improve, enhance or add new properties     &#10;Comprehend scientific articles on graphene research     &#10;Identify existing and new areas of graphene application and evaluate its potential     &#10;Evaluate whether or not graphene can contribute to your career advancement – be it in academia or industry  </li></ul>
+</li><li>2015</li></ul>
+</li><li> Principles of Project Management <ul>
+<li><span id="show1_14_1_8" class="foldclosed" onClick="show_folder('1_14_1_8')" style="POSITION: absolute">+</span> <span id="hide1_14_1_8" class="foldopened" onClick="hide_folder('1_14_1_8')">-</span>
+Polytechnic West<ul id="fold1_14_1_8" style="POSITION: relative; VISIBILITY: visible;">
+<li>    What a project is, and how you can manage it, including:         An overview of popular Project Management methodologies and standards         The project life cycle: Concept, Develop, Execute and Finish         Nine areas every project manager should know         The main constraints projects often encounter         The benefits of Project Management     What is involved in the concept phase, including:         Key project roles, like the project manager, team and stakeholder         Setting and justifying your goals     What is involved in the development phase, including:         The project management plan         Planning for change     How to monitor and control the execution of a project, including:         Quality auditing and continuous improvement         Getting handover right and how to use the lessons learned </li></ul>
+</li><li>2015</li></ul>
+</li><li>Software Processes and Agile Practices<ul>
+<li><span id="show1_14_1_9" class="foldclosed" onClick="show_folder('1_14_1_9')" style="POSITION: absolute">+</span> <span id="hide1_14_1_9" class="foldopened" onClick="hide_folder('1_14_1_9')">-</span>
+UAlberta<ul id="fold1_14_1_9" style="POSITION: relative; VISIBILITY: visible;">
+<li>This course delves into a variety of processes to structure software development. It also covers the foundations of core Agile practices, such as Extreme Programming and Scrum.</li></ul>
+</li><li>2015</li></ul>
+</li></ul>
+</li><li><span id="show1_14_2" class="foldclosed" onClick="show_folder('1_14_2')" style="POSITION: absolute">+</span> <span id="hide1_14_2" class="foldopened" onClick="hide_folder('1_14_2')">-</span>
+Unfinished:<ul id="fold1_14_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>Financial Programming and Policies, Part 1: Macroeconomic Accounts & Analysis</li><li>Introduction to Solid State Chemistry</li><li>Inclusive Leadership Training: Becoming a Successful Leader</li><li>The Science of Everyday Thinking</li><li>Framing: Creating powerful political messages</li><li>Learn HTML5 from W3C</li><li>Introduction to Big Data with Apache Spark (BerkeleyX)</li><li>Creative Problem Solving and Decision Making</li><li>Machine Learning</li><li>How Green Is That Product? An Introduction to Life Cycle Environmental Assessment</li><li>High Performance Scientific Computing (UoWashington)</li><li>Introduction to Physical Chemistry</li><li>Introduction to Data Science</li><li>Foundations of Development Policy</li><li>New Generation Infrastructures<ul>
+<li>DelftX NGI101x</li></ul>
+</li></ul>
+</li><li><span id="show1_14_3" class="foldclosed" onClick="show_folder('1_14_3')" style="POSITION: absolute">+</span> <span id="hide1_14_3" class="foldopened" onClick="hide_folder('1_14_3')">-</span>
+Planned:<ul id="fold1_14_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>many more</li></ul>
+</li></ul>
+</li><li><span id="show1_15" class="foldclosed" onClick="show_folder('1_15')" style="POSITION: absolute">+</span> <span id="hide1_15" class="foldopened" onClick="hide_folder('1_15')">-</span>
+Schools<ul id="fold1_15" style="POSITION: relative; VISIBILITY: visible;">
+<li>VI^th HIgh School in Warsaw<ul>
+<li>T. Reytan</li><li>1999-2001</li><li>maths-phys profile</li></ul>
+</li><li>II^nd High School in Gdynia<ul>
+<li>A. Mickiewicz</li><li>1997-1999</li><li>maths-phys profile</li></ul>
+</li><li>43^rd Primary School in Gdynia<ul>
+<li>1988-1997</li></ul>
+</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#ffff99;padding: 0.5em;">
+Skills<ul>
+<li><span id="show1_16" class="foldclosed" onClick="show_folder('1_16')" style="POSITION: absolute">+</span> <span id="hide1_16" class="foldopened" onClick="hide_folder('1_16')">-</span>
+Languages<ul id="fold1_16" style="POSITION: relative; VISIBILITY: visible;">
+<li>Polish<ul>
+<li>native speaker</li></ul>
+</li><li>English<ul>
+<li><span id="show1_16_1" class="foldclosed" onClick="show_folder('1_16_1')" style="POSITION: absolute">+</span> <span id="hide1_16_1" class="foldopened" onClick="hide_folder('1_16_1')">-</span>
+fluent<ul id="fold1_16_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>fluent level for an engineer. Sufficient for discusing and writing technical documents</li></ul>
+</li></ul>
+</li><li>German<ul>
+<li><span id="show1_16_2" class="foldclosed" onClick="show_folder('1_16_2')" style="POSITION: absolute">+</span> <span id="hide1_16_2" class="foldopened" onClick="hide_folder('1_16_2')">-</span>
+intermediate<ul id="fold1_16_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>learned for many (~10) years, unfortunately rarely used</li></ul>
+</li></ul>
+</li><li>Spanish<ul>
+<li><span id="show1_16_3" class="foldclosed" onClick="show_folder('1_16_3')" style="POSITION: absolute">+</span> <span id="hide1_16_3" class="foldopened" onClick="hide_folder('1_16_3')">-</span>
+basic<ul id="fold1_16_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>learned 3 years, not used, mostly passive understanding at the moment, but with a potential for quick refreshment</li></ul>
+</li></ul>
+</li><li>Dutch<ul>
+<li><span id="show1_16_4" class="foldclosed" onClick="show_folder('1_16_4')" style="POSITION: absolute">+</span> <span id="hide1_16_4" class="foldopened" onClick="hide_folder('1_16_4')">-</span>
+<basic<ul id="fold1_16_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>never exactly learned, but practiced during 3 months stay in the Netherlands</li></ul>
+</li></ul>
+</li><li>Russian<ul>
+<li><span id="show1_16_5" class="foldclosed" onClick="show_folder('1_16_5')" style="POSITION: absolute">+</span> <span id="hide1_16_5" class="foldopened" onClick="hide_folder('1_16_5')">-</span>
+<basic<ul id="fold1_16_5" style="POSITION: relative; VISIBILITY: visible;">
+<li>never learned but I do have Russian members of family and I found to be communicative while traveling through eastern Europe</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_17" class="foldclosed" onClick="show_folder('1_17')" style="POSITION: absolute">+</span> <span id="hide1_17" class="foldopened" onClick="hide_folder('1_17')">-</span>
+Computers<ul id="fold1_17" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_17_1" class="foldclosed" onClick="show_folder('1_17_1')" style="POSITION: absolute">+</span> <span id="hide1_17_1" class="foldopened" onClick="hide_folder('1_17_1')">-</span>
+Programming<ul id="fold1_17_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Python</li><li>R</li><li>MATLAB</li><li>FORTRAN 77/90</li><li>modelica</li><li>C++</li><li>bash</li></ul>
+</li><li>Usage<ul>
+<li><span id="show1_17_2" class="foldclosed" onClick="show_folder('1_17_2')" style="POSITION: absolute">+</span> <span id="hide1_17_2" class="foldopened" onClick="hide_folder('1_17_2')">-</span>
+Office<ul id="fold1_17_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>MS Office</li><li><span id="show1_17_2_1" class="foldclosed" onClick="show_folder('1_17_2_1')" style="POSITION: absolute">+</span> <span id="hide1_17_2_1" class="foldopened" onClick="hide_folder('1_17_2_1')">-</span>
+LibreOffice<ul id="fold1_17_2_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>OpenOffice and other forks alsoalso</li></ul>
+</li><li>gnumeric</li><li>Thunderbird</li><li><span id="show1_17_2_2" class="foldclosed" onClick="show_folder('1_17_2_2')" style="POSITION: absolute">+</span> <span id="hide1_17_2_2" class="foldopened" onClick="hide_folder('1_17_2_2')">-</span>
+Graphics<ul id="fold1_17_2_2" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_17_2_2_1" class="foldclosed" onClick="show_folder('1_17_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_17_2_2_1" class="foldopened" onClick="hide_folder('1_17_2_2_1')">-</span>
+raster<ul id="fold1_17_2_2_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>GIMP</li></ul>
+</li><li><span id="show1_17_2_2_2" class="foldclosed" onClick="show_folder('1_17_2_2_2')" style="POSITION: absolute">+</span> <span id="hide1_17_2_2_2" class="foldopened" onClick="hide_folder('1_17_2_2_2')">-</span>
+vector<ul id="fold1_17_2_2_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>Inkscape</li><li>dia</li><li>libreoffice Draw</li></ul>
+</li><li><span id="show1_17_2_2_3" class="foldclosed" onClick="show_folder('1_17_2_2_3')" style="POSITION: absolute">+</span> <span id="hide1_17_2_2_3" class="foldopened" onClick="hide_folder('1_17_2_2_3')">-</span>
+CAD<ul id="fold1_17_2_2_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>LibreCAD</li><li>AutoCAD</li><li>SALOME</li><li>Blender</li></ul>
+</li><li><span id="show1_17_2_2_4" class="foldclosed" onClick="show_folder('1_17_2_2_4')" style="POSITION: absolute">+</span> <span id="hide1_17_2_2_4" class="foldopened" onClick="hide_folder('1_17_2_2_4')">-</span>
+publishing<ul id="fold1_17_2_2_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>Scribus</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_17_3" class="foldclosed" onClick="show_folder('1_17_3')" style="POSITION: absolute">+</span> <span id="hide1_17_3" class="foldopened" onClick="hide_folder('1_17_3')">-</span>
+Modelling frameworks/environments<ul id="fold1_17_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>ANSYS FLUENT</li><li>Aspen Plus</li><li>HYSYS</li><li>MATLAB</li><li>Octave</li><li>DWSim</li><li>OMEdit</li><li>NetLogo</li></ul>
+</li><li><span id="show1_17_4" class="foldclosed" onClick="show_folder('1_17_4')" style="POSITION: absolute">+</span> <span id="hide1_17_4" class="foldopened" onClick="hide_folder('1_17_4')">-</span>
+Version control<ul id="fold1_17_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>git</li></ul>
+</li></ul>
+</li><li><span id="show1_17_5" class="foldclosed" onClick="show_folder('1_17_5')" style="POSITION: absolute">+</span> <span id="hide1_17_5" class="foldopened" onClick="hide_folder('1_17_5')">-</span>
+Administration<ul id="fold1_17_5" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_17_5_1" class="foldclosed" onClick="show_folder('1_17_5_1')" style="POSITION: absolute">+</span> <span id="hide1_17_5_1" class="foldopened" onClick="hide_folder('1_17_5_1')">-</span>
+Linux Admin<ul id="fold1_17_5_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>2008</li><li>probably mostly outdated</li><li><span id="show1_17_5_1_1" class="foldclosed" onClick="show_folder('1_17_5_1_1')" style="POSITION: absolute">+</span> <span id="hide1_17_5_1_1" class="foldopened" onClick="hide_folder('1_17_5_1_1')">-</span>
+but GNU/Linux still is my OS of choice<ul id="fold1_17_5_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>If asked I recommend Manjaro Linux</li></ul>
+</li></ul>
+</li><li><span id="show1_17_5_2" class="foldclosed" onClick="show_folder('1_17_5_2')" style="POSITION: absolute">+</span> <span id="hide1_17_5_2" class="foldopened" onClick="hide_folder('1_17_5_2')">-</span>
+Windows<ul id="fold1_17_5_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>not ever a real admin but I helped a lot with Windows administration &#10;before my employer did not have a proper proffesional support for IT</li><li>mostly outdated as it have been the times of Widows XP</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_18" class="foldclosed" onClick="show_folder('1_18')" style="POSITION: absolute">+</span> <span id="hide1_18" class="foldopened" onClick="hide_folder('1_18')">-</span>
+Driving<ul id="fold1_18" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_18_1" class="foldclosed" onClick="show_folder('1_18_1')" style="POSITION: absolute">+</span> <span id="hide1_18_1" class="foldopened" onClick="hide_folder('1_18_1')">-</span>
+cars and vans (up to 3,5 t)<ul id="fold1_18_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>polish category B driving licence</li></ul>
+</li><li><span id="show1_18_2" class="foldclosed" onClick="show_folder('1_18_2')" style="POSITION: absolute">+</span> <span id="hide1_18_2" class="foldopened" onClick="hide_folder('1_18_2')">-</span>
+sailing yachts<ul id="fold1_18_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>up to 25 m2 of sail</li><li>inland waters and few miles from the shore</li></ul>
+</li></ul>
+</li><li><span id="show1_19" class="foldclosed" onClick="show_folder('1_19')" style="POSITION: absolute">+</span> <span id="hide1_19" class="foldopened" onClick="hide_folder('1_19')">-</span>
+Music<ul id="fold1_19" style="POSITION: relative; VISIBILITY: visible;">
+<li>drums</li><li>guitar</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#ff9999;padding: 0.5em;">
+Events<ul>
+<li><span id="show1_20" class="foldclosed" onClick="show_folder('1_20')" style="POSITION: absolute">+</span> <span id="hide1_20" class="foldopened" onClick="hide_folder('1_20')">-</span>
+DataCarpentry 2015<ul id="fold1_20" style="POSITION: relative; VISIBILITY: visible;">
+<li>secondary instructor at Data Carpentry workshops for Cambridge University phd students and post-docs</li><li><a href="https://lgatto.github.io/2015-09-10-CAM/" target="_blank">workshop website</a>
+</li><li><a href="http://www.datacarpentry.org/" target="_blank">DataCarpentry</a>
+</li></ul>
+</li><li><span id="show1_21" class="foldclosed" onClick="show_folder('1_21')" style="POSITION: absolute">+</span> <span id="hide1_21" class="foldopened" onClick="hide_folder('1_21')">-</span>
+ESGI 2014<ul id="fold1_21" style="POSITION: relative; VISIBILITY: visible;">
+<li>European Study Group for Industry participant</li><li>Copenhagen, DTU (Danish University of Technology)</li><li>5 days workshop developing adjusting auto-adjusting ruck rear mirrors for spotting bikes on turns</li><li><a href="http://www.compute.dtu.dk/english/cooperation/ESGI" target="_blank">DTU ESGI website</a>
+</li></ul>
+</li><li><span id="show1_22" class="foldclosed" onClick="show_folder('1_22')" style="POSITION: absolute">+</span> <span id="hide1_22" class="foldopened" onClick="hide_folder('1_22')">-</span>
+LPB14<ul id="fold1_22" style="POSITION: relative; VISIBILITY: visible;">
+<li>X Letnie Praktyki Badawcze 2014</li><li><span id="show1_22_1" class="foldclosed" onClick="show_folder('1_22_1')" style="POSITION: absolute">+</span> <span id="hide1_22_1" class="foldopened" onClick="hide_folder('1_22_1')">-</span>
+10th Summer Research Internship 2014<ul id="fold1_22_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Two months bootcamp for MSc and PhD students</li><li>Organized by CIAMSE which is part of Polish Academy of Sciences</li></ul>
+</li><li><span id="show1_22_2" class="foldclosed" onClick="show_folder('1_22_2')" style="POSITION: absolute">+</span> <span id="hide1_22_2" class="foldopened" onClick="hide_folder('1_22_2')">-</span>
+Leading one of the projects<ul id="fold1_22_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>SMAUG</li><li>data analysis in banking sector</li></ul>
+</li><li><span id="show1_22_3" class="foldclosed" onClick="show_folder('1_22_3')" style="POSITION: absolute">+</span> <span id="hide1_22_3" class="foldopened" onClick="hide_folder('1_22_3')">-</span>
+Co-leading one of the prjects<ul id="fold1_22_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>KANT</li><li>technology niches indentification</li></ul>
+</li></ul>
+</li><li><span id="show1_23" class="foldclosed" onClick="show_folder('1_23')" style="POSITION: absolute">+</span> <span id="hide1_23" class="foldopened" onClick="hide_folder('1_23')">-</span>
+Strategy Planning 2012-2013<ul id="fold1_23" style="POSITION: relative; VISIBILITY: visible;">
+<li>I participated in series of workshops that developed strategy for the department I was working in</li><li>Workshop organizer: InnoCo</li></ul>
+</li><li><span id="show1_24" class="foldclosed" onClick="show_folder('1_24')" style="POSITION: absolute">+</span> <span id="hide1_24" class="foldopened" onClick="hide_folder('1_24')">-</span>
+WinterSchool 2012<ul id="fold1_24" style="POSITION: relative; VISIBILITY: visible;">
+<li>Leading participant</li><li>Warsaw, Polish Academy of Sciences</li><li>5 days workshop developing model of glicol dehumidification with microwaves</li></ul>
+</li><li><span id="show1_25" class="foldclosed" onClick="show_folder('1_25')" style="POSITION: absolute">+</span> <span id="hide1_25" class="foldopened" onClick="hide_folder('1_25')">-</span>
+SENERES Biomass 2012<ul id="fold1_25" style="POSITION: relative; VISIBILITY: visible;">
+<li>2 days workshops on biomass energy challenges</li><li>Workshop made by experinces researchers from ECN at Institute of Power Engineering, Warsaw</li></ul>
+</li><li><span id="show1_26" class="foldclosed" onClick="show_folder('1_26')" style="POSITION: absolute">+</span> <span id="hide1_26" class="foldopened" onClick="hide_folder('1_26')">-</span>
+International Conference on Boiler Technology 2010<ul id="fold1_26" style="POSITION: relative; VISIBILITY: visible;">
+<li>Presentation co-author</li><li>Oxy-combustion retrofit of an exisitng coal fired boiler</li><li>Technical conference, Szczyrk</li></ul>
+</li><li><span id="show1_27" class="foldclosed" onClick="show_folder('1_27')" style="POSITION: absolute">+</span> <span id="hide1_27" class="foldopened" onClick="hide_folder('1_27')">-</span>
+Book chapter Published 2010<ul id="fold1_27" style="POSITION: relative; VISIBILITY: visible;">
+<li>Co-author of chapter in oxy-combustion and CCS book  (in Polish):  "New technologies for combustion and flue gas purification"</li><li>Title In polish: "Nowe technologie spalania i oczyszczania spalin"</li><li>Main editors: Wojciech Nowak, Marek Pronobis</li></ul>
+</li><li><span id="show1_28" class="foldclosed" onClick="show_folder('1_28')" style="POSITION: absolute">+</span> <span id="hide1_28" class="foldopened" onClick="hide_folder('1_28')">-</span>
+Ecoenergy Network 2008<ul id="fold1_28" style="POSITION: relative; VISIBILITY: visible;">
+<li>Presentation</li><li>Example agroenergy thermodynamic cycles</li><li>Gdansk, Institute of Flow Machinery</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#f0f0f0;padding: 0.5em;">
+<span id="show1_29" class="foldclosed" onClick="show_folder('1_29')" style="POSITION: absolute">+</span> <span id="hide1_29" class="foldopened" onClick="hide_folder('1_29')">-</span>
+Personal Info<ul id="fold1_29" style="POSITION: relative; VISIBILITY: visible;">
+<li>Contact<ul>
+<li>e-mail<ul>
+<li>name at surname dot xyz</li></ul>
+</li><li>www<ul>
+<li>http://www.strug.xyz</a>
+</li></ul>
+</li></ul>
+</li><li>Born<ul>
+<li>1982-07-25</li><li><span id="show1_29_1" class="foldclosed" onClick="show_folder('1_29_1')" style="POSITION: absolute">+</span> <span id="hide1_29_1" class="foldopened" onClick="hide_folder('1_29_1')">-</span>
+in Gdynia<ul id="fold1_29_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Northern Poland</li></ul>
+</li></ul>
+</li><li>Curent place of residence<ul>
+<li>Cambridge, UK</li></ul>
+</li><li>Social media<ul>
+<li><a href="https://mastodon.green/@strugk" target="_blank">mastodon</a>
+</li><li><a href="https://strugk.newsblur.com/" target="_blank">Newsblur</a>
+</li><li><a href="https://www.linkedin.com/in/strugk" target="_blank">LinkedIn</a>
+</li><li><a href="https://app.thestorygraph.com/profile/strugk" target="_blank">the Story Graph</a>
+</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#9999ff;padding: 0.5em;">
+Experience<ul>
+<li><div style="background-color:#f0f0f0;padding: 0.5em;">
+Consulting<ul>
+<li><span id="show1_30" class="foldclosed" onClick="show_folder('1_30')" style="POSITION: absolute">+</span> <span id="hide1_30" class="foldopened" onClick="hide_folder('1_30')">-</span>
+feasibility sudies<ul id="fold1_30" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_30_1" class="foldclosed" onClick="show_folder('1_30_1')" style="POSITION: absolute">+</span> <span id="hide1_30_1" class="foldopened" onClick="hide_folder('1_30_1')">-</span>
+energy sector<ul id="fold1_30_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>environmental equipment feasbility at existing power plants</li><li>power plant retrofitting</li><li>industrial power and heat sources</li></ul>
+</li><li><span id="show1_30_2" class="foldclosed" onClick="show_folder('1_30_2')" style="POSITION: absolute">+</span> <span id="hide1_30_2" class="foldopened" onClick="hide_folder('1_30_2')">-</span>
+data science solutions<ul id="fold1_30_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>technology taxonomy</li><li>fraud taxonomy</li><li>churn prediction</li></ul>
+</li></ul>
+</li><li><span id="show1_31" class="foldclosed" onClick="show_folder('1_31')" style="POSITION: absolute">+</span> <span id="hide1_31" class="foldopened" onClick="hide_folder('1_31')">-</span>
+techno-economic evaluations<ul id="fold1_31" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_31_1" class="foldclosed" onClick="show_folder('1_31_1')" style="POSITION: absolute">+</span> <span id="hide1_31_1" class="foldopened" onClick="hide_folder('1_31_1')">-</span>
+investment analysis<ul id="fold1_31_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>NPV, IRR etc.</li></ul>
+</li><li>monte carlo risk assesment</li></ul>
+</li><li><span id="show1_32" class="foldclosed" onClick="show_folder('1_32')" style="POSITION: absolute">+</span> <span id="hide1_32" class="foldopened" onClick="hide_folder('1_32')">-</span>
+net-zero roadmaps<ul id="fold1_32" style="POSITION: relative; VISIBILITY: visible;">
+<li>mid- and long-term roadmaps</li><li>energy efficiency measures</li><li>power and heat generation potential</li></ul>
+</li><li><span id="show1_33" class="foldclosed" onClick="show_folder('1_33')" style="POSITION: absolute">+</span> <span id="hide1_33" class="foldopened" onClick="hide_folder('1_33')">-</span>
+strategic analysis<ul id="fold1_33" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_33_1" class="foldclosed" onClick="show_folder('1_33_1')" style="POSITION: absolute">+</span> <span id="hide1_33_1" class="foldopened" onClick="hide_folder('1_33_1')">-</span>
+problems structurization<ul id="fold1_33_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Means-Ends Analysis (MEA)</li><li>Mutually-Exclusive-Collectively-Exhaustive (MECE)</li></ul>
+</li><li>market boundaries identification</li><li>resources utilization analysis</li></ul>
+</li><li><span id="show1_34" class="foldclosed" onClick="show_folder('1_34')" style="POSITION: absolute">+</span> <span id="hide1_34" class="foldopened" onClick="hide_folder('1_34')">-</span>
+heating systems design<ul id="fold1_34" style="POSITION: relative; VISIBILITY: visible;">
+<li>advising in solar & heat pump heating systems planning</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#f0f0f0;padding: 0.5em;">
+Management<ul>
+<li><span id="show1_35" class="foldclosed" onClick="show_folder('1_35')" style="POSITION: absolute">+</span> <span id="hide1_35" class="foldopened" onClick="hide_folder('1_35')">-</span>
+research project management<ul id="fold1_35" style="POSITION: relative; VISIBILITY: visible;">
+<li>writing research projects proposals</li><li><span id="show1_35_1" class="foldclosed" onClick="show_folder('1_35_1')" style="POSITION: absolute">+</span> <span id="hide1_35_1" class="foldopened" onClick="hide_folder('1_35_1')">-</span>
+arranging research team<ul id="fold1_35_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>within the organisation</li><li>from outside of the organization</li></ul>
+</li><li>managing tasks within the team</li><li>keeping the team focused on given tasks</li><li>reporting to funding agency</li></ul>
+</li><li><span id="show1_36" class="foldclosed" onClick="show_folder('1_36')" style="POSITION: absolute">+</span> <span id="hide1_36" class="foldopened" onClick="hide_folder('1_36')">-</span>
+consulting project managment<ul id="fold1_36" style="POSITION: relative; VISIBILITY: visible;">
+<li>proposal drafting</li><li>consortium coordination</li><li>budget and schedule planning</li><li>negotiations</li></ul>
+</li><li><span id="show1_37" class="foldclosed" onClick="show_folder('1_37')" style="POSITION: absolute">+</span> <span id="hide1_37" class="foldopened" onClick="hide_folder('1_37')">-</span>
+workshops leader/teacher<ul id="fold1_37" style="POSITION: relative; VISIBILITY: visible;">
+<li>workshops planning</li><li>presenting background</li><li>organizing work</li><li>motivating and keeping everybody busy</li></ul>
+</li><li><span id="show1_38" class="foldclosed" onClick="show_folder('1_38')" style="POSITION: absolute">+</span> <span id="hide1_38" class="foldopened" onClick="hide_folder('1_38')">-</span>
+technology overview and monitoring<ul id="fold1_38" style="POSITION: relative; VISIBILITY: visible;">
+<li>writing guidelines</li><li>preparing schedule</li><li>overseeing relevance of submitted data</li><li>mapping tagged knowledge</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#f0f0f0;padding: 0.5em;">
+Research<ul>
+<li><span id="show1_39" class="foldclosed" onClick="show_folder('1_39')" style="POSITION: absolute">+</span> <span id="hide1_39" class="foldopened" onClick="hide_folder('1_39')">-</span>
+mathematical modeling<ul id="fold1_39" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_39_1" class="foldclosed" onClick="show_folder('1_39_1')" style="POSITION: absolute">+</span> <span id="hide1_39_1" class="foldopened" onClick="hide_folder('1_39_1')">-</span>
+devices<ul id="fold1_39_1" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_39_1_1" class="foldclosed" onClick="show_folder('1_39_1_1')" style="POSITION: absolute">+</span> <span id="hide1_39_1_1" class="foldopened" onClick="hide_folder('1_39_1_1')">-</span>
+boilers<ul id="fold1_39_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_39_1_1_1" class="foldclosed" onClick="show_folder('1_39_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_39_1_1_1" class="foldopened" onClick="hide_folder('1_39_1_1_1')">-</span>
+oxy-combustion<ul id="fold1_39_1_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>radiative and convective heat transfer</li><li>finding optimal flue gas recirculation ratio</li></ul>
+</li><li><span id="show1_39_1_1_2" class="foldclosed" onClick="show_folder('1_39_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_39_1_1_2" class="foldopened" onClick="hide_folder('1_39_1_1_2')">-</span>
+biomass (with coal) co-firing<ul id="fold1_39_1_1_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>finding optimal biomass to coal ratio</li><li>influence of newly introduced fuel on steam parameters</li></ul>
+</li><li><span id="show1_39_1_1_3" class="foldclosed" onClick="show_folder('1_39_1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_39_1_1_3" class="foldopened" onClick="hide_folder('1_39_1_1_3')">-</span>
+flue gas recirculation<ul id="fold1_39_1_1_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>flue gas recirculation can improve heat transfer and efficiency, although needs additional investments and increases system complexity</li></ul>
+</li></ul>
+</li><li><span id="show1_39_1_2" class="foldclosed" onClick="show_folder('1_39_1_2')" style="POSITION: absolute">+</span> <span id="hide1_39_1_2" class="foldopened" onClick="hide_folder('1_39_1_2')">-</span>
+fuel cells<ul id="fold1_39_1_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>Solid Oxide Fuel Cells systems</li><li>SOFC stacks</li></ul>
+</li></ul>
+</li><li><span id="show1_39_2" class="foldclosed" onClick="show_folder('1_39_2')" style="POSITION: absolute">+</span> <span id="hide1_39_2" class="foldopened" onClick="hide_folder('1_39_2')">-</span>
+systems<ul id="fold1_39_2" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_39_2_1" class="foldclosed" onClick="show_folder('1_39_2_1')" style="POSITION: absolute">+</span> <span id="hide1_39_2_1" class="foldopened" onClick="hide_folder('1_39_2_1')">-</span>
+power plants optimization<ul id="fold1_39_2_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>efficiency as a function of heat exchangers and gas composition functions</li></ul>
+</li><li><span id="show1_39_2_2" class="foldclosed" onClick="show_folder('1_39_2_2')" style="POSITION: absolute">+</span> <span id="hide1_39_2_2" class="foldopened" onClick="hide_folder('1_39_2_2')">-</span>
+thermodynamic cycles<ul id="fold1_39_2_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>steam powet plants</li><li>gas turbines</li><li>internal combustion engines</li><li>adsorption cooling cycles</li></ul>
+</li><li>smart district heating</li></ul>
+</li><li><span id="show1_39_3" class="foldclosed" onClick="show_folder('1_39_3')" style="POSITION: absolute">+</span> <span id="hide1_39_3" class="foldopened" onClick="hide_folder('1_39_3')">-</span>
+processes<ul id="fold1_39_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>heat exchange</li><li>mass transfer</li><li><span id="show1_39_3_1" class="foldclosed" onClick="show_folder('1_39_3_1')" style="POSITION: absolute">+</span> <span id="hide1_39_3_1" class="foldopened" onClick="hide_folder('1_39_3_1')">-</span>
+chemical reactions<ul id="fold1_39_3_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>combustion</li><li>pollutants decomposition</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_40" class="foldclosed" onClick="show_folder('1_40')" style="POSITION: absolute">+</span> <span id="hide1_40" class="foldopened" onClick="hide_folder('1_40')">-</span>
+technology development<ul id="fold1_40" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_40_1" class="foldclosed" onClick="show_folder('1_40_1')" style="POSITION: absolute">+</span> <span id="hide1_40_1" class="foldopened" onClick="hide_folder('1_40_1')">-</span>
+biomass CHP<ul id="fold1_40_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>new biomass-fired  CHP development</li><li>work included extensive literature review</li><li>potential solutions have been modeled and their performace calculated</li><li>experimental  installation have been designed</li></ul>
+</li><li><span id="show1_40_2" class="foldclosed" onClick="show_folder('1_40_2')" style="POSITION: absolute">+</span> <span id="hide1_40_2" class="foldopened" onClick="hide_folder('1_40_2')">-</span>
+NOx pollution mitigation<ul id="fold1_40_2" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_40_2_1" class="foldclosed" onClick="show_folder('1_40_2_1')" style="POSITION: absolute">+</span> <span id="hide1_40_2_1" class="foldopened" onClick="hide_folder('1_40_2_1')">-</span>
+NOx reduction<ul id="fold1_40_2_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>primary methods<ul>
+<li><span id="show1_40_2_1_1" class="foldclosed" onClick="show_folder('1_40_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_40_2_1_1" class="foldopened" onClick="hide_folder('1_40_2_1_1')">-</span>
+supress NOx generation&#10;(nitrogen oxides)<ul id="fold1_40_2_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>under-stechiometric conditions</li><li>low temperature </li></ul>
+</li></ul>
+</li><li>SNCR<ul>
+<li>Selective Non-Catalytic Reduction</li></ul>
+</li><li>SCR<ul>
+<li>Selective Catalytic Reduction</li></ul>
+</li></ul>
+</li><li><span id="show1_40_2_2" class="foldclosed" onClick="show_folder('1_40_2_2')" style="POSITION: absolute">+</span> <span id="hide1_40_2_2" class="foldopened" onClick="hide_folder('1_40_2_2')">-</span>
+other oportunities / synergies<ul id="fold1_40_2_2" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_40_2_2_1" class="foldclosed" onClick="show_folder('1_40_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_40_2_2_1" class="foldopened" onClick="hide_folder('1_40_2_2_1')">-</span>
+SOx<ul id="fold1_40_2_2_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>Sulfur oxides</li><li>studies on SOx reduction in recirculated flue gases</li></ul>
+</li><li><span id="show1_40_2_2_2" class="foldclosed" onClick="show_folder('1_40_2_2_2')" style="POSITION: absolute">+</span> <span id="hide1_40_2_2_2" class="foldopened" onClick="hide_folder('1_40_2_2_2')">-</span>
+NH3<ul id="fold1_40_2_2_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>ammonia</li><li>used in power plants to reduce NOx emissions</li></ul>
+</li><li><span id="show1_40_2_2_3" class="foldclosed" onClick="show_folder('1_40_2_2_3')" style="POSITION: absolute">+</span> <span id="hide1_40_2_2_3" class="foldopened" onClick="hide_folder('1_40_2_2_3')">-</span>
+PM<ul id="fold1_40_2_2_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>Particulate matter</li><li>ash - ammonia interactions</li><li>Influence of these interaction on ESP performance</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_40_3" class="foldclosed" onClick="show_folder('1_40_3')" style="POSITION: absolute">+</span> <span id="hide1_40_3" class="foldopened" onClick="hide_folder('1_40_3')">-</span>
+ontology of technologies<ul id="fold1_40_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>development of tool for assesement of technologies basing on graphene</li><li>the tool used technology maps of technology to predict feasibility of new ideas</li></ul>
+</li></ul>
+</li><li><span id="show1_41" class="foldclosed" onClick="show_folder('1_41')" style="POSITION: absolute">+</span> <span id="hide1_41" class="foldopened" onClick="hide_folder('1_41')">-</span>
+measurments / experiments<ul id="fold1_41" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_41_1" class="foldclosed" onClick="show_folder('1_41_1')" style="POSITION: absolute">+</span> <span id="hide1_41_1" class="foldopened" onClick="hide_folder('1_41_1')">-</span>
+flue gas composition and temperature <ul id="fold1_41_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>laboratory</li><li>pilot scale</li><li>industrial</li></ul>
+</li><li>designing experiments</li><li>scheduling experiments</li></ul>
+</li><li><span id="show1_42" class="foldclosed" onClick="show_folder('1_42')" style="POSITION: absolute">+</span> <span id="hide1_42" class="foldopened" onClick="hide_folder('1_42')">-</span>
+machine learning<ul id="fold1_42" style="POSITION: relative; VISIBILITY: visible;">
+<li>Kohonnen self-organising maps</li><li>random forests</li><li>decision trees</li><li>other</li></ul>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li><li><div style="background-color:#99ffcc;padding: 0.5em;">
+Interests<ul>
+<li><div style="background-color:#f0f0f0;padding: 0.5em;">
+Technology<ul>
+<li><span id="show1_43" class="foldclosed" onClick="show_folder('1_43')" style="POSITION: absolute">+</span> <span id="hide1_43" class="foldopened" onClick="hide_folder('1_43')">-</span>
+energy technologies<ul id="fold1_43" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_43_1" class="foldclosed" onClick="show_folder('1_43_1')" style="POSITION: absolute">+</span> <span id="hide1_43_1" class="foldopened" onClick="hide_folder('1_43_1')">-</span>
+renewable energy<ul id="fold1_43_1" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_43_1_1" class="foldclosed" onClick="show_folder('1_43_1_1')" style="POSITION: absolute">+</span> <span id="hide1_43_1_1" class="foldopened" onClick="hide_folder('1_43_1_1')">-</span>
+solar<ul id="fold1_43_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_43_1_1_1" class="foldclosed" onClick="show_folder('1_43_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_43_1_1_1" class="foldopened" onClick="hide_folder('1_43_1_1_1')">-</span>
+artificial photosynthesis<ul id="fold1_43_1_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>group of technologies aiming at producing chemical fuel from solar radiation and abundant substances (like H2O or CO2)</li><li>natural photosynthesis has very low efficiency (~1%)</li><li>relativly to biomass artificial photosynthesis should be more efficient and the product should easier to handle and store</li></ul>
+</li><li><span id="show1_43_1_1_2" class="foldclosed" onClick="show_folder('1_43_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_43_1_1_2" class="foldopened" onClick="hide_folder('1_43_1_1_2')">-</span>
+concentrated solar power<ul id="fold1_43_1_1_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>ORC</li><li>supercriticalCO2</li><li>dry cooling towers</li></ul>
+</li><li><span id="show1_43_1_1_3" class="foldclosed" onClick="show_folder('1_43_1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_43_1_1_3" class="foldopened" onClick="hide_folder('1_43_1_1_3')">-</span>
+solar thermal<ul id="fold1_43_1_1_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>using high exergy sources for heating domestic hot water and heating buildings,</li><li>solar thermal collectors allow to gather and store low-grade heat</li></ul>
+</li><li><span id="show1_43_1_1_4" class="foldclosed" onClick="show_folder('1_43_1_1_4')" style="POSITION: absolute">+</span> <span id="hide1_43_1_1_4" class="foldopened" onClick="hide_folder('1_43_1_1_4')">-</span>
+solar pv<ul id="fold1_43_1_1_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>technology doing huge leaps in costs and efficiency</li><li>intagrating with buildings and machines is an interesting direction, as putting huge areas of PV on the ground seems a waste of land</li></ul>
+</li></ul>
+</li><li><span id="show1_43_1_2" class="foldclosed" onClick="show_folder('1_43_1_2')" style="POSITION: absolute">+</span> <span id="hide1_43_1_2" class="foldopened" onClick="hide_folder('1_43_1_2')">-</span>
+hydro<ul id="fold1_43_1_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>microhydro power plants may offer dispatchable energy almost independent from the weather</li></ul>
+</li><li><span id="show1_43_1_3" class="foldclosed" onClick="show_folder('1_43_1_3')" style="POSITION: absolute">+</span> <span id="hide1_43_1_3" class="foldopened" onClick="hide_folder('1_43_1_3')">-</span>
+wind<ul id="fold1_43_1_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>this seems to be mature technology but farm optimization and novel offshore mounting ideas are worth keeping an eye on them</li></ul>
+</li><li><span id="show1_43_1_4" class="foldclosed" onClick="show_folder('1_43_1_4')" style="POSITION: absolute">+</span> <span id="hide1_43_1_4" class="foldopened" onClick="hide_folder('1_43_1_4')">-</span>
+geothermal<ul id="fold1_43_1_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>ORC</li><li>supercriticalCO2</li><li>dry cooling towers</li></ul>
+</li></ul>
+</li><li><span id="show1_43_2" class="foldclosed" onClick="show_folder('1_43_2')" style="POSITION: absolute">+</span> <span id="hide1_43_2" class="foldopened" onClick="hide_folder('1_43_2')">-</span>
+conventional energy sources<ul id="fold1_43_2" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_43_2_1" class="foldclosed" onClick="show_folder('1_43_2_1')" style="POSITION: absolute">+</span> <span id="hide1_43_2_1" class="foldopened" onClick="hide_folder('1_43_2_1')">-</span>
+biomass<ul id="fold1_43_2_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>biomass utiliziation is tricky</li><li>there is some food waste that is hard to utilize otherwise</li></ul>
+</li><li><span id="show1_43_2_2" class="foldclosed" onClick="show_folder('1_43_2_2')" style="POSITION: absolute">+</span> <span id="hide1_43_2_2" class="foldopened" onClick="hide_folder('1_43_2_2')">-</span>
+fossil fuels<ul id="fold1_43_2_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>being involved in some CCS technologies development &#10;left me with some curiosity about future of fossils utilization</li></ul>
+</li><li><span id="show1_43_2_3" class="foldclosed" onClick="show_folder('1_43_2_3')" style="POSITION: absolute">+</span> <span id="hide1_43_2_3" class="foldopened" onClick="hide_folder('1_43_2_3')">-</span>
+nuclear<ul id="fold1_43_2_3" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_43_2_3_1" class="foldclosed" onClick="show_folder('1_43_2_3_1')" style="POSITION: absolute">+</span> <span id="hide1_43_2_3_1" class="foldopened" onClick="hide_folder('1_43_2_3_1')">-</span>
+fission<ul id="fold1_43_2_3_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>big potential that is seams to lack good idea for further development</li><li>combination of fission reactor and steam turbines forces some expensive designs and safety measures</li><li>this sector awaits for disruptive innovation but I stilled havent figured the direction</li></ul>
+</li><li><span id="show1_43_2_3_2" class="foldclosed" onClick="show_folder('1_43_2_3_2')" style="POSITION: absolute">+</span> <span id="hide1_43_2_3_2" class="foldopened" onClick="hide_folder('1_43_2_3_2')">-</span>
+fusion<ul id="fold1_43_2_3_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>could be a perfect source for deep space exploration</li><li>fascinating edge of human abilities. Idea known for decades still waits for sensible implementation</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_43_3" class="foldclosed" onClick="show_folder('1_43_3')" style="POSITION: absolute">+</span> <span id="hide1_43_3" class="foldopened" onClick="hide_folder('1_43_3')">-</span>
+energy storage<ul id="fold1_43_3" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_43_3_1" class="foldclosed" onClick="show_folder('1_43_3_1')" style="POSITION: absolute">+</span> <span id="hide1_43_3_1" class="foldopened" onClick="hide_folder('1_43_3_1')">-</span>
+electricity storage<ul id="fold1_43_3_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>pumped hydro<ul>
+<li><a href="http://www.scientificamerican.com/article/energy-storage-hits-the-rails-out-west/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+sciam%2Fgreen-living+%28Topic%3A+Green+Living%29" target="_blank">but also rail-dirt on a hill</a>
+</li></ul>
+</li><li>batteries<ul>
+<li>especially flow batteries with charged electrolyte refueling option</li></ul>
+</li><li>flywheels<ul>
+<li><a href="http://cleantechnica.com/2015/05/22/energy-train-store-10-dutch-electricity/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+IM-cleantechnica+%28CleanTechnica%29" target="_blank">but also maglev trains momentum</a>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_43_3_2" class="foldclosed" onClick="show_folder('1_43_3_2')" style="POSITION: absolute">+</span> <span id="hide1_43_3_2" class="foldopened" onClick="hide_folder('1_43_3_2')">-</span>
+heat storage<ul id="fold1_43_3_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>PCM - phase change materials</li><li>system optimisation</li></ul>
+</li></ul>
+</li><li><span id="show1_43_4" class="foldclosed" onClick="show_folder('1_43_4')" style="POSITION: absolute">+</span> <span id="hide1_43_4" class="foldopened" onClick="hide_folder('1_43_4')">-</span>
+energy efficiency<ul id="fold1_43_4" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_43_4_1" class="foldclosed" onClick="show_folder('1_43_4_1')" style="POSITION: absolute">+</span> <span id="hide1_43_4_1" class="foldopened" onClick="hide_folder('1_43_4_1')">-</span>
+virtual power plants<ul id="fold1_43_4_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>turning some infrastructure off to reduce peak demand</li></ul>
+</li><li><span id="show1_43_4_2" class="foldclosed" onClick="show_folder('1_43_4_2')" style="POSITION: absolute">+</span> <span id="hide1_43_4_2" class="foldopened" onClick="hide_folder('1_43_4_2')">-</span>
+heat pumps<ul id="fold1_43_4_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>progress in installed power of variable RE will be a factor forcing electrical heating of buildings.</li><li>heating pumps are much better option for electric heatng than traditional electric heaters</li></ul>
+</li><li><span id="show1_43_4_3" class="foldclosed" onClick="show_folder('1_43_4_3')" style="POSITION: absolute">+</span> <span id="hide1_43_4_3" class="foldopened" onClick="hide_folder('1_43_4_3')">-</span>
+building design<ul id="fold1_43_4_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>integration of energy technologies into the buildings</li></ul>
+</li></ul>
+</li></ul>
+</li><li><span id="show1_44" class="foldclosed" onClick="show_folder('1_44')" style="POSITION: absolute">+</span> <span id="hide1_44" class="foldopened" onClick="hide_folder('1_44')">-</span>
+information technologies<ul id="fold1_44" style="POSITION: relative; VISIBILITY: visible;">
+<li>computer science</li><li><span id="show1_44_1" class="foldclosed" onClick="show_folder('1_44_1')" style="POSITION: absolute">+</span> <span id="hide1_44_1" class="foldopened" onClick="hide_folder('1_44_1')">-</span>
+machine learning<ul id="fold1_44_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>a.k.a. data mining</li><li>a.k.a. artificial intelligence</li></ul>
+</li><li><span id="show1_44_2" class="foldclosed" onClick="show_folder('1_44_2')" style="POSITION: absolute">+</span> <span id="hide1_44_2" class="foldopened" onClick="hide_folder('1_44_2')">-</span>
+interoperability<ul id="fold1_44_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>standards in interfaces allow divesity and complexity</li></ul>
+</li><li><span id="show1_44_3" class="foldclosed" onClick="show_folder('1_44_3')" style="POSITION: absolute">+</span> <span id="hide1_44_3" class="foldopened" onClick="hide_folder('1_44_3')">-</span>
+free and open source software<ul id="fold1_44_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>GNU/Linux</li><li>exploring possibilities of software</li></ul>
+</li></ul>
+</li><li><span id="show1_45" class="foldclosed" onClick="show_folder('1_45')" style="POSITION: absolute">+</span> <span id="hide1_45" class="foldopened" onClick="hide_folder('1_45')">-</span>
+emerging/disruptive technologies<ul id="fold1_45" style="POSITION: relative; VISIBILITY: visible;">
+<li>technology niches/gaps</li><li>technology readiness assessment</li><li>innovation strategies</li></ul>
+</li><li><span id="show1_46" class="foldclosed" onClick="show_folder('1_46')" style="POSITION: absolute">+</span> <span id="hide1_46" class="foldopened" onClick="hide_folder('1_46')">-</span>
+infrastructure / urbanization<ul id="fold1_46" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_46_1" class="foldclosed" onClick="show_folder('1_46_1')" style="POSITION: absolute">+</span> <span id="hide1_46_1" class="foldopened" onClick="hide_folder('1_46_1')">-</span>
+water and sewer systems<ul id="fold1_46_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>but also smart ways to go without a complex system</li></ul>
+</li><li><span id="show1_46_2" class="foldclosed" onClick="show_folder('1_46_2')" style="POSITION: absolute">+</span> <span id="hide1_46_2" class="foldopened" onClick="hide_folder('1_46_2')">-</span>
+electric grid<ul id="fold1_46_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>international connectors</li><li>off-grid installations</li><li>energy markets</li><li>energy subsidy schemes</li></ul>
+</li><li><span id="show1_46_3" class="foldclosed" onClick="show_folder('1_46_3')" style="POSITION: absolute">+</span> <span id="hide1_46_3" class="foldopened" onClick="hide_folder('1_46_3')">-</span>
+traffic organization<ul id="fold1_46_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>low tempo zones</li><li>bike lanes</li><li><span id="show1_46_3_1" class="foldclosed" onClick="show_folder('1_46_3_1')" style="POSITION: absolute">+</span> <span id="hide1_46_3_1" class="foldopened" onClick="hide_folder('1_46_3_1')">-</span>
+logistics<ul id="fold1_46_3_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>rail vs trucks vs ships</li><li>sustianbility and economics</li></ul>
+</li><li>public transport</li></ul>
+</li><li><span id="show1_46_4" class="foldclosed" onClick="show_folder('1_46_4')" style="POSITION: absolute">+</span> <span id="hide1_46_4" class="foldopened" onClick="hide_folder('1_46_4')">-</span>
+city / district zoning and composition<ul id="fold1_46_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>creating lively cities</li><li>mixing industry with residential and commerce</li></ul>
+</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#f0f0f0;padding: 0.5em;">
+Economy<ul>
+<li><span id="show1_47" class="foldclosed" onClick="show_folder('1_47')" style="POSITION: absolute">+</span> <span id="hide1_47" class="foldopened" onClick="hide_folder('1_47')">-</span>
+sustainability<ul id="fold1_47" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_47_1" class="foldclosed" onClick="show_folder('1_47_1')" style="POSITION: absolute">+</span> <span id="hide1_47_1" class="foldopened" onClick="hide_folder('1_47_1')">-</span>
+resource shortage / circular economy<ul id="fold1_47_1" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_47_1_1" class="foldclosed" onClick="show_folder('1_47_1_1')" style="POSITION: absolute">+</span> <span id="hide1_47_1_1" class="foldopened" onClick="hide_folder('1_47_1_1')">-</span>
+usage efficiency<ul id="fold1_47_1_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>minimizing animal based substances</li></ul>
+</li><li>reusing</li><li>recycling</li><li>upcycling</li></ul>
+</li><li><span id="show1_47_2" class="foldclosed" onClick="show_folder('1_47_2')" style="POSITION: absolute">+</span> <span id="hide1_47_2" class="foldopened" onClick="hide_folder('1_47_2')">-</span>
+climate change<ul id="fold1_47_2" style="POSITION: relative; VISIBILITY: visible;">
+<li>carbon taxation</li><li>low-carbon technologies</li><li><span id="show1_47_2_1" class="foldclosed" onClick="show_folder('1_47_2_1')" style="POSITION: absolute">+</span> <span id="hide1_47_2_1" class="foldopened" onClick="hide_folder('1_47_2_1')">-</span>
+emission reduction<ul id="fold1_47_2_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>industrial</li><li>transport</li><li>animal</li></ul>
+</li></ul>
+</li><li><span id="show1_47_3" class="foldclosed" onClick="show_folder('1_47_3')" style="POSITION: absolute">+</span> <span id="hide1_47_3" class="foldopened" onClick="hide_folder('1_47_3')">-</span>
+biodiversity<ul id="fold1_47_3" style="POSITION: relative; VISIBILITY: visible;">
+<li>wildlife conservation</li><li>small scale farming</li><li>farming seeds diversity</li></ul>
+</li><li><span id="show1_47_4" class="foldclosed" onClick="show_folder('1_47_4')" style="POSITION: absolute">+</span> <span id="hide1_47_4" class="foldopened" onClick="hide_folder('1_47_4')">-</span>
+social inclusiveness<ul id="fold1_47_4" style="POSITION: relative; VISIBILITY: visible;">
+<li>human rights</li></ul>
+</li></ul>
+</li><li><span id="show1_48" class="foldclosed" onClick="show_folder('1_48')" style="POSITION: absolute">+</span> <span id="hide1_48" class="foldopened" onClick="hide_folder('1_48')">-</span>
+developing countries<ul id="fold1_48" style="POSITION: relative; VISIBILITY: visible;">
+<li>systemic help<ul>
+<li>fair trade certification</li></ul>
+</li><li>infrastructure needs<ul>
+<li>energy</li><li>water</li><li>telecommunication</li></ul>
+</li></ul>
+</li><li><span id="show1_49" class="foldclosed" onClick="show_folder('1_49')" style="POSITION: absolute">+</span> <span id="hide1_49" class="foldopened" onClick="hide_folder('1_49')">-</span>
+macroeconomics<ul id="fold1_49" style="POSITION: relative; VISIBILITY: visible;">
+<li>taxes</li><li>policies</li><li>tariffs</li><li>subsidies</li></ul>
+</li><li><span id="show1_50" class="foldclosed" onClick="show_folder('1_50')" style="POSITION: absolute">+</span> <span id="hide1_50" class="foldopened" onClick="hide_folder('1_50')">-</span>
+openness<ul id="fold1_50" style="POSITION: relative; VISIBILITY: visible;">
+<li>transparency</li><li>open access</li><li>open source</li><li>open science</li></ul>
+</li></ul>
+</div>
+</li><li><div style="background-color:#f0f0f0;padding: 0.5em;">
+Management<ul>
+<li><span id="show1_51" class="foldclosed" onClick="show_folder('1_51')" style="POSITION: absolute">+</span> <span id="hide1_51" class="foldopened" onClick="hide_folder('1_51')">-</span>
+psychology<ul id="fold1_51" style="POSITION: relative; VISIBILITY: visible;">
+<li>variaty of human profils</li><li>discovering peoples personal goals</li></ul>
+</li><li><span id="show1_52" class="foldclosed" onClick="show_folder('1_52')" style="POSITION: absolute">+</span> <span id="hide1_52" class="foldopened" onClick="hide_folder('1_52')">-</span>
+innovation facilitation<ul id="fold1_52" style="POSITION: relative; VISIBILITY: visible;">
+<li>engagement</li><li>rewarding system</li></ul>
+</li><li><span id="show1_53" class="foldclosed" onClick="show_folder('1_53')" style="POSITION: absolute">+</span> <span id="hide1_53" class="foldopened" onClick="hide_folder('1_53')">-</span>
+strategy development<ul id="fold1_53" style="POSITION: relative; VISIBILITY: visible;">
+<li>values</li><li>long term goals</li><li>futurology</li></ul>
+</li><li><span id="show1_54" class="foldclosed" onClick="show_folder('1_54')" style="POSITION: absolute">+</span> <span id="hide1_54" class="foldopened" onClick="hide_folder('1_54')">-</span>
+complex decision making<ul id="fold1_54" style="POSITION: relative; VISIBILITY: visible;">
+<li><span id="show1_54_1" class="foldclosed" onClick="show_folder('1_54_1')" style="POSITION: absolute">+</span> <span id="hide1_54_1" class="foldopened" onClick="hide_folder('1_54_1')">-</span>
+problem structurization<ul id="fold1_54_1" style="POSITION: relative; VISIBILITY: visible;">
+<li>f.e. MECE, means-ends</li></ul>
+</li><li>optimization</li><li>expert algorithms</li></ul>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li></ul>
+<SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+</body>
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 //<![CDATA[
@@ -870,4 +883,4 @@ class="statcounter"><img class="statcounter"
 src="http://c.statcounter.com/10671045/0/faaf9c20/1/"
 alt="shopify analytics" /></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
-</html>
+<a rel="me" href="https://mastodon.green/@strugk">Mastodon</a></html>
